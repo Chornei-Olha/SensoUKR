@@ -15,7 +15,7 @@ export default function BoardSlider() {
   const boardMembers = [
     {
       id: 1,
-      photo: '/images/banner01.jpg',
+      photo: '/images/general.webp',
       name: t('title1'),
       description: t('text1'),
     },

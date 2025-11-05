@@ -1,34 +1,34 @@
 'use client';
 
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
 import { Autoplay } from 'swiper/modules';
-import Image from 'next/image';
 
 import 'swiper/css';
-import { useTranslations } from 'next-intl';
 
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/banner01.jpg',
+    photo: '/images/8.1.webp',
   },
   {
     id: 2,
-    photo: '/images/banner02.jpg',
+    photo: '/images/8.2.webp',
   },
   {
     id: 3,
-    photo: '/images/banner03.jpg',
+    photo: '/images/8.3.webp',
   },
   {
     id: 4,
-    photo: '/images/banner04.jpeg',
+    photo: '/images/8.4.webp',
   },
   {
     id: 5,
-    photo: '/images/banner05.jpeg',
+    photo: '/images/8.5.webp',
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Buyers() {
           {/* Стрелки (десктоп) */}
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className="hidden sm:flex absolute -left-16 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+            className="hidden sm:flex absolute -left-10 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ export default function Buyers() {
 
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className="hidden sm:flex absolute -right-16 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+            className="hidden sm:flex absolute -right-10 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +88,35 @@ export default function Buyers() {
             </svg>
           </button>
 
+          <Swiper
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            modules={[Autoplay]}
+            autoplay={{ delay: 3000 }}
+            spaceBetween={24}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {boardMembers.map((member) => (
+              <SwiperSlide key={member.id}>
+                <div className="h-[400px] flex justify-center items-center overflow-hidden">
+                  <Image
+                    src={member.photo}
+                    alt="slider"
+                    width={900}
+                    height={500}
+                    className="h-full w-auto object-cover rounded-lg"
+                    priority
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
           {/* Стрелки (мобилка) */}
-          <div className="flex justify-center gap-4 sm:hidden mb-4">
+          <div className="flex justify-center gap-4 sm:hidden mt-4">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
@@ -129,35 +156,6 @@ export default function Buyers() {
               </svg>
             </button>
           </div>
-
-          <Swiper
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            modules={[Autoplay]}
-            autoplay={{ delay: 5000 }}
-            spaceBetween={24}
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              640: { slidesPerView: 3 },
-              1024: { slidesPerView: 5 },
-            }}
-          >
-            {boardMembers.map((member) => (
-              <SwiperSlide key={member.id}>
-                <div className="h-full flex flex-col justify-between border rounded-xl shadow-md bg-white">
-                  <div className="relative">
-                    <Image
-                      src={member.photo}
-                      alt="slider"
-                      width={900}
-                      height={500}
-                      className="w-auto h-[20vh] object-cover rounded-lg"
-                      priority
-                    />
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
 
         {/* Модалка */}

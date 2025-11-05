@@ -14,8 +14,8 @@ type Feature = {
   max?: number; // всего блоков
 };
 
-export default function Oro() {
-  const t = useTranslations('Oro');
+export default function Duct() {
+  const t = useTranslations('Duct');
   const swiperRef = useRef<SwiperType | null>(null);
 
   const features: Feature[] = [
@@ -28,19 +28,19 @@ export default function Oro() {
     {
       title: t('par-title2'),
       subtitle: t('par-text2'),
-      value: 6,
+      value: 5,
       max: 6,
     },
     {
       title: t('par-title3'),
       subtitle: t('par-text3'),
-      value: 6,
+      value: 5,
       max: 6,
     },
     {
       title: t('par-title4'),
       subtitle: t('par-text4'),
-      value: 6,
+      value: 5,
       max: 6,
     },
     {
@@ -54,23 +54,31 @@ export default function Oro() {
   const boardMembers = [
     {
       id: 1,
-      photo: '/images/4.1.webp',
+      photo: '/images/5.1.webp',
     },
     {
       id: 2,
-      photo: '/images/4.2.webp',
+      photo: '/images/5.2.webp',
     },
     {
       id: 3,
-      photo: '/images/4.3.webp',
+      photo: '/images/5.3.webp',
     },
     {
       id: 4,
-      photo: '/images/4.4.webp',
+      photo: '/images/5.4.webp',
     },
     {
       id: 5,
-      photo: '/images/4.5.webp',
+      photo: '/images/5.5.webp',
+    },
+    {
+      id: 6,
+      photo: '/images/5.6.webp',
+    },
+    {
+      id: 7,
+      photo: '/images/5.7.webp',
     },
   ];
 
@@ -223,6 +231,17 @@ export default function Oro() {
               <li>{t('text-li6')} </li>
               <li>{t('text-li7')} </li>
               <li>{t('text-li8')} </li>
+              <li>{t('text-li9')} </li>
+            </ul>
+            <p className="font-regular font-inter mt-8">{t('adv-title')}</p>
+            <ul className="list-disc list-inside mt-4 space-y-1">
+              <li>{t('adv-li1')}</li>
+              <li>{t('adv-li2')} </li>
+              <li>{t('adv-li3')} </li>
+              <li>{t('adv-li4')} </li>
+              <li>{t('adv-li5')}</li>
+              <li>{t('adv-li6')} </li>
+              <li>{t('adv-li7')} </li>
             </ul>
           </>
         )}
@@ -236,6 +255,7 @@ export default function Oro() {
               <li>{t('char-li4')}</li>
               <li>{t('char-li5')}</li>
               <li>{t('char-li6')}</li>
+              <li>{t('char-li7')}</li>
             </ul>{' '}
             <table className="min-w-full border border-gray-300 text-xs sm:text-lg">
               <thead className="bg-gray-100">
@@ -253,24 +273,24 @@ export default function Oro() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="border px-3 py-2">SO24</td>
-                  <td className="border px-3 py-2">{t('nameTape')} SENSO Oro +130ºC</td>
-                  <td className="border px-3 py-2">{t('colorTape')}</td>
-                  <td className="border px-3 py-2">24mm*40yd</td>
-                  <td className="border px-3 py-2">24</td>
-                </tr>
-                <tr>
-                  <td className="border px-3 py-2">SO36</td>
-                  <td className="border px-3 py-2">{t('nameTape')} SENSO Oro +130ºC</td>
-                  <td className="border px-3 py-2">{t('colorTape')}</td>
-                  <td className="border px-3 py-2">36mm*40yd</td>
+                  <td className="border px-3 py-2">SRT485W</td>
+                  <td className="border px-3 py-2">{t('nameTape')} SENSO</td>
+                  <td className="border px-3 py-2">{t('colorTape1')}</td>
+                  <td className="border px-3 py-2">48mm*5m</td>
                   <td className="border px-3 py-2">12</td>
                 </tr>
                 <tr>
-                  <td className="border px-3 py-2">SO48</td>
-                  <td className="border px-3 py-2">{t('nameTape')} SENSO Oro +130ºC</td>
-                  <td className="border px-3 py-2">{t('colorTape')}</td>
-                  <td className="border px-3 py-2">48mm*40yd</td>
+                  <td className="border px-3 py-2">SRT485G</td>
+                  <td className="border px-3 py-2">{t('nameTape')} SENSO</td>
+                  <td className="border px-3 py-2">{t('colorTape2')}</td>
+                  <td className="border px-3 py-2">48mm*5m</td>
+                  <td className="border px-3 py-2">12</td>
+                </tr>
+                <tr>
+                  <td className="border px-3 py-2">SRT485B</td>
+                  <td className="border px-3 py-2">{t('nameTape')} SENSO</td>
+                  <td className="border px-3 py-2">{t('colorTape3')}</td>
+                  <td className="border px-3 py-2">48mm*5m</td>
                   <td className="border px-3 py-2">12</td>
                 </tr>
               </tbody>

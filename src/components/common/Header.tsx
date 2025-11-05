@@ -102,17 +102,20 @@ export default function Header() {
                   className="absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50 overflow-hidden"
                 >
                   <Link href="/bianco" className="block px-4 py-2 hover:bg-red-100">
-                    Senso Bianco
+                    {t('tapes1')}{' '}
                   </Link>
                   <Link href="/marrone" className="block px-4 py-2 hover:bg-red-100">
-                    Senso Marrone
+                    {t('tapes2')}{' '}
                   </Link>
                   <Link href="/rossa" className="block px-4 py-2 hover:bg-red-100">
-                    Senso Rossa
+                    {t('tapes3')}{' '}
                   </Link>
 
                   <Link href="/oro" className="block px-4 py-2 hover:bg-red-100">
-                    Senso Oro
+                    {t('tapes4')}{' '}
+                  </Link>
+                  <Link href="/duct" className="block px-4 py-2 hover:bg-red-100">
+                    {t('tapes5')}{' '}
                   </Link>
                 </motion.div>
               )}
@@ -233,16 +236,19 @@ export default function Header() {
               {productOpen && (
                 <div className="flex flex-col pl-4 mt-3 space-y-3">
                   <Link href="/bianco" onClick={() => setIsOpen(false)}>
-                    Senco Bianco
+                    {t('tapes1')}{' '}
                   </Link>
                   <Link href="/marrone" onClick={() => setIsOpen(false)}>
-                    Senso Marrone
+                    {t('tapes2')}{' '}
                   </Link>
                   <Link href="/rossa" onClick={() => setIsOpen(false)}>
-                    Senso Rossa
+                    {t('tapes3')}{' '}
                   </Link>
                   <Link href="/oro" onClick={() => setIsOpen(false)}>
-                    Senso Oro
+                    {t('tapes4')}{' '}
+                  </Link>
+                  <Link href="/oro" onClick={() => setIsOpen(false)}>
+                    {t('tapes5')}{' '}
                   </Link>
                 </div>
               )}

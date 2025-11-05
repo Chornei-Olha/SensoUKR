@@ -1,8 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from 'swiper';
+import { Autoplay } from 'swiper/modules';
 
 type Feature = {
   title: string;
@@ -13,6 +16,7 @@ type Feature = {
 
 export default function Rossa() {
   const t = useTranslations('Rossa');
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const features: Feature[] = [
     {
@@ -47,67 +51,133 @@ export default function Rossa() {
     },
   ];
 
+  const boardMembers = [
+    {
+      id: 1,
+      photo: '/images/3.1.webp',
+    },
+    {
+      id: 2,
+      photo: '/images/3.2.webp',
+    },
+    {
+      id: 3,
+      photo: '/images/3.3.webp',
+    },
+    {
+      id: 4,
+      photo: '/images/3.4.webp',
+    },
+    {
+      id: 5,
+      photo: '/images/3.5.webp',
+    },
+  ];
+
   const [tab, setTab] = useState('Призначення');
 
   return (
     <div className="w-full pt-10">
       {/* Top section with images */}
-      <div className="flex flex-col sm:flex-row gap-6 sm:gap-16 items-center">
-        <div className="flex justify-center">
-          <Image
-            src="/images/ROSSA2.webp"
-            alt="Senso Rossa Tape"
-            width={1320}
-            height={1680}
-            className="rounded-2xl shadow-md h-[400px] w-auto"
-          />
-        </div>
-        <div className="relative flex justify-center items-center sm:h-[400px]">
-          <Image
-            src="/images/ROSSA.webp"
-            alt="Tape in use"
-            width={4096}
-            height={2560}
-            className="rounded-2xl shadow-md h-auto sm:h-full w-[auto]"
-          />
-          {/* <button className="absolute bg-white/80 rounded-full p-4 shadow-md text-xl">▶</button> */}
-        </div>
-      </div>
-
-      {/* Buy buttons */}
-      <div className="flex flex-col sm:flex-row justify-start items-left sm:items-center gap-5 my-16 flex-nowrap sm:flex-wrap">
-        <p className="whitespace-nowrap font-inter font-regular">{t('shop')}</p>
-
-        <div className="flex flex-row gap-2 sm: gap-6 items-start">
-          <a
-            href="https://epicentrk.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
+      <div className="relative">
+        {/* Стрелки (десктоп) */}
+        <button
+          onClick={() => swiperRef.current?.slidePrev()}
+          className="hidden sm:flex absolute -left-10 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <Image
-              src="/images/epicentr-logo.png" // 👉 картинка логотипа Эпицентра
-              alt="Епіцентр"
-              width={492}
-              height={163}
-              className="object-contain w-auto h-[40px] sm:h-[60px]"
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
             />
-          </a>
+          </svg>
+        </button>
 
-          <a
-            href="https://rozetka.com.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
+        <button
+          onClick={() => swiperRef.current?.slideNext()}
+          className="hidden sm:flex absolute -right-10 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <Image
-              src="/images/rozetka-logo.png" // 👉 картинка логотипа Розетки
-              alt="Розетка"
-              width={1864}
-              height={431}
-              className="object-contain w-auto h-[40px] sm:h-[60px]"
-            />
-          </a>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          modules={[Autoplay]}
+          autoplay={{ delay: 3000 }}
+          spaceBetween={24}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {boardMembers.map((member) => (
+            <SwiperSlide key={member.id}>
+              <div className="h-[400px] flex justify-center items-center overflow-hidden">
+                <Image
+                  src={member.photo}
+                  alt="slider"
+                  width={900}
+                  height={500}
+                  className="h-full w-auto object-cover rounded-lg"
+                  priority
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Стрелки (мобилка) */}
+        <div className="flex justify-center gap-4 sm:hidden mt-4">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -143,7 +213,7 @@ export default function Rossa() {
       <div className="mt-6 text-gray-700 leading-relaxed font-medium font-montserrat text-sm sm:text-xl">
         {tab === 'Призначення' && (
           <>
-            <p>{t('mainText')}</p>
+            <p className="font-montserrat font-light">{t('mainText')}</p>
             <ul className="list-disc list-inside mt-4 space-y-1">
               <li>{t('text-li1')}</li>
               <li>{t('text-li2')} </li>
@@ -257,6 +327,43 @@ export default function Rossa() {
             height={1079}
             style={{ height: 'auto', width: '100%', maxWidth: '130px' }}
           />
+        </div>
+      </div>
+
+      {/* Buy buttons */}
+      <div className="flex flex-col sm:flex-row justify-start items-left sm:items-center gap-5 my-16 flex-nowrap sm:flex-wrap">
+        <p className="whitespace-nowrap font-inter font-regular">{t('shop')}</p>
+
+        <div className="flex flex-row gap-2 sm:gap-6 items-start">
+          <a
+            href="https://epicentrk.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
+          >
+            <Image
+              src="/images/epicentr-logo.png" // 👉 картинка логотипа Эпицентра
+              alt="Епіцентр"
+              width={492}
+              height={163}
+              className="object-contain w-auto h-[40px] sm:h-[60px]"
+            />
+          </a>
+
+          <a
+            href="https://rozetka.com.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
+          >
+            <Image
+              src="/images/rozetka-logo.png" // 👉 картинка логотипа Розетки
+              alt="Розетка"
+              width={1864}
+              height={431}
+              className="object-contain w-auto h-[40px] sm:h-[60px]"
+            />
+          </a>
         </div>
       </div>
     </div>

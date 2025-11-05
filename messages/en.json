@@ -7,7 +7,12 @@
     "menu3-1": "For industrial clients",
     "menu3-2": "For distributors and dealers",
     "menu3-3": "For retail customers",
-    "menu4": "Contacts"
+    "menu4": "Contacts",
+    "tapes1": "Bianco masking tapes white",
+    "tapes2": "Marrone masking tapes brown",
+    "tapes3": "Rossa masking tapes red",
+    "tapes4": "Oro masking tapes gold",
+    "tapes5": "SENSO duct tape"
   },
   "Hero": {
     "title": "SENSO masking tapes",
@@ -208,16 +213,77 @@
     "par-title5": "SAFE REMOVAL",
     "par-text5": "without traces and damage"
   },
+  "Duct": {
+    "shop": "BUY AT RETAIL",
+    "menu1": "Appointment",
+    "menu2": "Technical Specifications",
+    "menu3": "Parameters",
+    "mainText": "SENSO DUCT TAPE is an ultra-strong adhesive reinforced tape made in Italy, designed for a wide range of repair and installation works. It consists of a double-layer composite material made of fabric laminated with polyethylene. The adhesive layer is based on synthetic rubber (hot melt) and provides high adhesion. With a thickness of 300 microns, the reinforced SENSO tape is highly resistant to longitudinal tearing while still being easy to tear across by hand for convenient use. The technical reinforced tape has excellent adhesion to aluminum, steel, wood, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass. It is ideal for repair and construction work and is also used in industrial production. It is suitable for temporary and long-term fixation of various parts, structures, elements, and components.",
+    "text-li1": "Fixation of various parts, structures, elements, and components.",
+    "text-li2": "Sealing and insulation of joints, seams, and connections.",
+    "text-li3": "Repair works in heating, ventilation, and water supply systems.",
+    "text-li4": "Bonding and packaging in warehouse and transport logistics.",
+    "text-li5": "Temporary fixation of parts during installation, repair, and gluing works.",
+    "text-li6": "Used in automotive, woodworking, furniture, agricultural, defense, and other industries.",
+    "text-li7": "Production of UAVs (unmanned aerial vehicles, drones).",
+    "text-li8": "Protection of parts during polishing and grinding.",
+    "text-li9": "Fixation of protective films, sheets, and floor coverings.",
+    "certification": "SENSO ORO Automotive Masking Tape certified by FSC® and PEFC:",
+
+    "char-li1": "Base material: synthetic fabric laminated with PE",
+    "char-li2": "Adhesive: synthetic rubber",
+    "char-li3": "Thickness: 300 µm",
+    "char-li4": "Paper density: 95 g/m²",
+    "char-li5": "Elongation: 16%",
+    "char-li6": "Adhesion: 14.2 N/cm",
+    "char-li7": "Temperature resistance: from -20°C to +80°C",
+
+    "adv-title": "Advantages",
+    "adv-li1": "Strong base with a thickness of 300 µm.",
+    "adv-li2": "Excellent adaptation to various surface textures and shapes.",
+    "adv-li3": "Resistance to sunlight, humidity, low and high temperatures.",
+    "adv-li4": "Excellent adhesion to aluminum, steel, wood, films, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass.",
+    "adv-li5": "Ultra-high resistance to longitudinal stretching.",
+    "adv-li6": "High holding strength against mechanical loads.",
+    "adv-li7": "Easy to use — can be torn across by hand.",
+
+    "table-title-col1": "Article",
+    "table-title-col2": "Name",
+    "table-title-col3": "Color",
+    "table-title-col4": "Size",
+    "table-title-col5": "In a box,",
+    "table-title-col5-1": "pcs",
+    "nameTape": "Automotive Masking Tape",
+    "colorTape1": "White",
+    "colorTape2": "Grey",
+    "colorTape3": "Black",
+
+    "par-title1": "MECHANICAL RESISTANCE",
+    "par-text1": "holding force during grinding and polishing",
+    "par-title2": "ELASTICITY",
+    "par-text2": "flexibility on curved surfaces",
+    "par-title3": "ADHESION STRENGTH",
+    "par-text3": "metal, polyurethane, PP, PVC, polycarbonate, paint, varnish, glass, wood, cardboard, etc.",
+    "par-title4": "THERMAL RESISTANCE",
+    "par-text4": "up to 1 year",
+    "par-title5": "SAFE REMOVAL",
+    "par-text5": "without traces and damage"
+  },
   "ContactForm": {
     "title": "Buy wholesale, or order a consultation",
+    "title2": "Leave your email or phone number, and we will contact you.",
     "title1": "What is your name?",
-    "text1": "Enter Your Name",
+    "text1": "Enter Your Name...",
     "text2": "Enter email...",
     "title3": "Comment",
     "text3": "Text",
+    "title4": "Number phone",
+    "text4": "Enter phone...",
     "consent1": "I consent to the processing of information",
     "consent2": "I agree to the privacy policy",
-    "button": "Send"
+    "button": "Send",
+    "thanksTitle": "Thank you for your request!",
+    "thanksText": "We are already working on it — expect a call within 15 minutes."
   },
   "Footer": {
     "slogan1": "SENSO: certified quality,",
@@ -232,7 +298,9 @@
     "address": "Address:",
     "telephone": "Tel:",
     "street": "Lugova Str., Kyiv, Ukraine",
-    "everyday": "MON-TUE 10.00 - 18.00",
-    "weekend": "SAT-SUN 10.00 - 14.00"
+    "everyday": "MON-FRI 9.00 - 19.00",
+    "weekend": "SAT-SUN 10.00 - 16.00",
+    "office": "(office)",
+    "sale": "(sales department)"
   }
 }
