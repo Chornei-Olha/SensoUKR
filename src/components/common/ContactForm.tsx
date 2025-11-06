@@ -134,7 +134,6 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder={t('text2')}
                     className="w-full p-2 rounded-lg text-white bg-transparent border border-white placeholder-white/50"
-                    required
                   />
 
                   <label className="block mt-4 mb-1">{t('title4')}</label>
@@ -145,7 +144,6 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder={t('text4')}
                     className="w-full p-2 rounded-lg text-white bg-transparent border border-white placeholder-white/50"
-                    required
                   />
                 </div>
 
