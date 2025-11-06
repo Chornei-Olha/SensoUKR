@@ -247,7 +247,7 @@ export default function Header() {
                   <Link href="/oro" onClick={() => setIsOpen(false)}>
                     {t('tapes4')}{' '}
                   </Link>
-                  <Link href="/oro" onClick={() => setIsOpen(false)}>
+                  <Link href="/duct" onClick={() => setIsOpen(false)}>
                     {t('tapes5')}{' '}
                   </Link>
                 </div>
