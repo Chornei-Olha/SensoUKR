@@ -103,7 +103,7 @@ export default function Footer() {
             href="mailto:info@senso-tape.com.ua"
             className="hover:text-red-600 font-inter font-regular"
           >
-            info@senso-tape.com
+            info@senso-tape.com.ua
           </a>
         </div>
       </div>
