@@ -91,7 +91,7 @@ export default function Footer() {
                 +38 (099) 341 38 57 {t('sale')}
               </a>
             </div>
-            <div className="flex items-center gap-2 text-xl text-red-600">
+            <div className="flex items-center gap-5 sm:gap-3 text-3xl sm:text-xl text-red-600">
               <a href="https://wa.me/380993413857" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="hover:text-green-500 transition-colors" />
               </a>
