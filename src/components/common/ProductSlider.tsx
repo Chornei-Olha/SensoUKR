@@ -16,6 +16,7 @@ const products = [
   { title: 'SENSO ROSSA – AUTO + 120°C', image: '/images/product2.webp', link: '/rossa' },
 
   { title: 'SENSO ORO – AUTO + 130°C', image: '/images/product4.webp', link: '/oro' },
+  { title: 'SENSO DUCT TAPE', image: '/images/5.1.webp', link: '/duct' },
 ];
 
 export default function ProductSlider() {
@@ -57,7 +58,7 @@ export default function ProductSlider() {
                     alt={product.title}
                     width={1320}
                     height={1608}
-                    className="object-contain w-full h-auto"
+                    className="object-contain w-full h-[auto]"
                   />
                   <h3 className="absolute top-2 left-2 text-xl leading-snug font-montserrat font-bold">
                     {product.title.includes('–') ? (
