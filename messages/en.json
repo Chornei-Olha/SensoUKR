@@ -258,16 +258,16 @@
     "colorTape2": "Grey",
     "colorTape3": "Black",
 
-    "par-title1": "MECHANICAL RESISTANCE",
-    "par-text1": "holding force during grinding and polishing",
-    "par-title2": "ELASTICITY",
-    "par-text2": "flexibility on curved surfaces",
+    "par-title1": "MECHANICAL STRENGTH",
+    "par-text1": "holding force under load",
+    "par-title2": "RESISTANCE TO ADVERSE CONDITIONS",
+    "par-text2": "UV radiation, humidity, temperature fluctuations",
     "par-title3": "ADHESION STRENGTH",
-    "par-text3": "metal, polyurethane, PP, PVC, polycarbonate, paint, varnish, glass, wood, cardboard, etc.",
-    "par-title4": "THERMAL RESISTANCE",
-    "par-text4": "up to 1 year",
-    "par-title5": "SAFE REMOVAL",
-    "par-text5": "without traces and damage"
+    "par-text3": "aluminum, steel, wood, films, ceramics, textiles, rubber, plastics, glass, etc.",
+    "par-title4": "SURFACE COMPATIBILITY",
+    "par-text4": "smooth, porous, rough, uneven",
+    "par-title5": "CLEAN REMOVAL",
+    "par-text5": "without glue residue"
   },
   "ContactForm": {
     "title": "Buy wholesale, or order a consultation",

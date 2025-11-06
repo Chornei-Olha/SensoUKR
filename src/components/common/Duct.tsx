@@ -34,7 +34,7 @@ export default function Duct() {
     {
       title: t('par-title3'),
       subtitle: t('par-text3'),
-      value: 5,
+      value: 6,
       max: 6,
     },
     {
@@ -46,7 +46,7 @@ export default function Duct() {
     {
       title: t('par-title5'),
       subtitle: t('par-text5'),
-      value: 6,
+      value: 4,
       max: 6,
     },
   ];
@@ -325,30 +325,6 @@ export default function Duct() {
             </div>
           </div>
         )}
-      </div>
-
-      <div className="pt-10 text-left font-semibold">
-        <p className="font-regular font-inter text-base md:text-xl mb-6 text-gray-700">
-          {t('certification')}
-        </p>
-
-        {/* Логотипы */}
-        <div className="flex flex-row items-start gap-8">
-          <Image
-            src="/images/fsc-logo.png"
-            alt="FSC сертифікація"
-            width={560}
-            height={811}
-            style={{ height: 'auto', width: '100%', maxWidth: '130px' }}
-          />
-          <Image
-            src="/images/pefc-logo.png"
-            alt="PEFC сертифікація"
-            width={581}
-            height={1079}
-            style={{ height: 'auto', width: '100%', maxWidth: '130px' }}
-          />
-        </div>
       </div>
 
       {/* Buy buttons */}

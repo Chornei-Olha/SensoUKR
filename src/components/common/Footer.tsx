@@ -71,10 +71,10 @@ export default function Footer() {
 
           {/* --- Первый телефон --- */}
           <div className="flex items-center gap-2 mb-2">
-            <FaPhone className="text-blue-600 text-lg" />
+            <FaPhone className="text-md" />
             <a
               href="tel:+380445852108"
-              className="text-blue-600 hover:underline font-inter font-regular"
+              className="hover:text-red-600 hover:underline font-inter font-regular"
             >
               +38 (044) 585 21 08 {t('office')}
             </a>
@@ -83,15 +83,15 @@ export default function Footer() {
           {/* --- Второй телефон --- */}
           <div className="flex items-center gap-3 flex-wrap">
             <div className="flex items-center gap-1">
-              <FaPhone className="text-blue-600 text-lg" />
+              <FaPhone className="text-lg==nd" />
               <a
                 href="tel:+380993413857"
-                className="text-blue-600 hover:underline font-inter font-regular"
+                className="hover:text-red-600 hover:underline font-inter font-regular"
               >
                 +38 (099) 341 38 57 {t('sale')}
               </a>
             </div>
-            <div className="flex items-center gap-2 text-xl text-blue-600">
+            <div className="flex items-center gap-2 text-xl text-red-600">
               <a href="https://wa.me/380993413857" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="hover:text-green-500 transition-colors" />
               </a>
@@ -107,7 +107,7 @@ export default function Footer() {
           <p className="my-3 font-semibold font-inter">E-mail:</p>
           <a
             href="mailto:info@senso-tape.com"
-            className="text-blue-600 hover:underline font-inter font-regular"
+            className="hover:text-red-600 hover:underline font-inter font-regular"
           >
             info@senso-tape.com
           </a>
