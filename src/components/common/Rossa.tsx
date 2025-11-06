@@ -119,7 +119,7 @@ export default function Rossa() {
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[Autoplay]}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 5000 }}
           spaceBetween={24}
           breakpoints={{
             320: { slidesPerView: 1 },
@@ -336,7 +336,7 @@ export default function Rossa() {
 
         <div className="flex flex-row gap-2 sm:gap-6 items-start">
           <a
-            href="https://epicentrk.ua/"
+            href="https://epicentrk.ua/ua/shop/strichka-maliarna-senso-rossa-auto-120-c-36-mm-36-6-m-chervonyi.html"
             target="_blank"
             rel="noopener noreferrer"
             className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
@@ -350,7 +350,7 @@ export default function Rossa() {
             />
           </a>
 
-          <a
+          {/* <a
             href="https://rozetka.com.ua/"
             target="_blank"
             rel="noopener noreferrer"
@@ -363,7 +363,7 @@ export default function Rossa() {
               height={431}
               className="object-contain w-auto h-[40px] sm:h-[60px]"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

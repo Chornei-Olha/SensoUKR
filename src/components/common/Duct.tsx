@@ -127,7 +127,7 @@ export default function Duct() {
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[Autoplay]}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 5000 }}
           spaceBetween={24}
           breakpoints={{
             320: { slidesPerView: 1 },
@@ -333,7 +333,7 @@ export default function Duct() {
 
         <div className="flex flex-row gap-2 sm:gap-6 items-start">
           <a
-            href="https://epicentrk.ua/"
+            href="https://epicentrk.ua/ua/shop/armovana-remontna-strichka-senso-48-mm-5-m-siryi.html"
             target="_blank"
             rel="noopener noreferrer"
             className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
@@ -347,7 +347,7 @@ export default function Duct() {
             />
           </a>
 
-          <a
+          {/* <a
             href="https://rozetka.com.ua/"
             target="_blank"
             rel="noopener noreferrer"
@@ -360,7 +360,7 @@ export default function Duct() {
               height={431}
               className="object-contain w-auto h-[40px] sm:h-[60px]"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

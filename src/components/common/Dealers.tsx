@@ -91,7 +91,7 @@ export default function Dealers() {
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             modules={[Autoplay]}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 5000 }}
             spaceBetween={24}
             breakpoints={{
               320: { slidesPerView: 1 },

@@ -119,7 +119,7 @@ export default function Bianco() {
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[Autoplay]}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 5000 }}
           spaceBetween={24}
           breakpoints={{
             320: { slidesPerView: 1 },
@@ -340,7 +340,7 @@ export default function Bianco() {
 
         <div className="flex flex-row gap-2 sm:gap-6 items-start">
           <a
-            href="https://epicentrk.ua/"
+            href="https://epicentrk.ua/ua/shop/strichka-maliarna-senso-blanco-auto-48-mm-36-6-m-bilyi.html"
             target="_blank"
             rel="noopener noreferrer"
             className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"

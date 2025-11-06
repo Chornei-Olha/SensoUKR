@@ -91,7 +91,7 @@ export default function Buyers() {
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             modules={[Autoplay]}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 5000 }}
             spaceBetween={24}
             breakpoints={{
               320: { slidesPerView: 1 },
@@ -174,7 +174,7 @@ export default function Buyers() {
       </div>
       <div className="flex gap-6 justify-center pb-10">
         <a
-          href="https://epicentrk.ua/"
+          href="https://epicentrk.ua/ua/shop/kleykie-lenty-dlya-avto/filter/brand-is-8e8f27f04a315083f9c146d546d83e37/apply/"
           target="_blank"
           rel="noopener noreferrer"
           className="transition transform hover:-translate-y-2 hover:scale-105 duration-300"
@@ -188,7 +188,7 @@ export default function Buyers() {
           />
         </a>
 
-        <a
+        {/* <a
           href="https://rozetka.com.ua/"
           target="_blank"
           rel="noopener noreferrer"
@@ -201,7 +201,7 @@ export default function Buyers() {
             height={431}
             className="object-contain w-auto h-[30px] sm:h-[50px]"
           />
-        </a>
+        </a> */}
       </div>
     </section>
   );
