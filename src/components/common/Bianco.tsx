@@ -353,7 +353,7 @@ export default function Bianco() {
               className="object-contain w-auto h-[40px] sm:h-[60px]"
             />
           </a>
-
+          {/* 
           <a
             href="https://rozetka.com.ua/"
             target="_blank"
@@ -367,7 +367,7 @@ export default function Bianco() {
               height={431}
               className="object-contain w-auto h-[40px] sm:h-[60px]"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

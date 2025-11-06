@@ -64,19 +64,19 @@ export default function ContactForm() {
 
   return (
     <section className="py-5 sm:py-16">
-      <div className="mb-6 text-left font-semibold">
+      <div className="mb-6 text-center font-semibold">
         <h2 className="text-lg md:text-2xl font-bold font-inter mb-6 text-gray-700">
           {t('title')}{' '}
-          <div className="flex items-center gap-3 flex-wrap">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 flex-wrap">
             <div className="flex items-center gap-1">
               <a
                 href="tel:+380993413857"
-                className="text-gray-700 hover:underline font-inter font-regular"
+                className="text-gray-700 hover:text-red-600 font-inter font-regular"
               >
                 +38 (099) 341 38 57
               </a>
             </div>
-            <div className="flex items-center gap-2 text-xl text-blue-600">
+            <div className="flex items-center gap-5 sm:gap-3 text-3xl sm:text-xl text-red-600">
               <a href="https://wa.me/380993413857" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="hover:text-green-500 transition-colors" />
               </a>

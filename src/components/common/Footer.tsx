@@ -19,17 +19,17 @@ export default function Footer() {
         {/* Левая колонка */}
         <div className="gap-6 text-sm text-center md:text-left md:items-start flex flex-col items-center">
           <p className="font-semibold font-inter mb-1">{t('menu')}</p>
-          <ul className="space-y-1 font-inter font-regular">
+          <ul className="space-y-4 font-inter font-regular">
             <li>
               <Link href="/" className="hover:text-red-500 transition-colors">
                 {t('menu1')}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#slider1" className="hover:text-red-500 transition-colors">
                 {t('menu2')}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/partnersPage" className="hover:text-red-500 transition-colors">
                 {t('menu3')}
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Правая колонка */}
-        <div className="text-sm">
+        <div className="text-sm ml-0 sm:ml-auto">
           <p className="mb-2 font-semibold font-inter">{t('address')}</p>
           <p className="mb-3 font-inter font-regular">
             {t('street')} <br />
@@ -72,22 +72,16 @@ export default function Footer() {
           {/* --- Первый телефон --- */}
           <div className="flex items-center gap-2 mb-2">
             <FaPhone className="text-md" />
-            <a
-              href="tel:+380445852108"
-              className="hover:text-red-600 hover:underline font-inter font-regular"
-            >
+            <a href="tel:+380445852108" className="hover:text-red-600 font-inter font-regular">
               +38 (044) 585 21 08 {t('office')}
             </a>
           </div>
 
           {/* --- Второй телефон --- */}
-          <div className="flex items-center gap-3 flex-wrap">
-            <div className="flex items-center gap-1">
+          <div className="flex flex-col gap-3 flex-wrap">
+            <div className="flex items-center sm:items-left gap-1">
               <FaPhone className="text-lg==nd" />
-              <a
-                href="tel:+380993413857"
-                className="hover:text-red-600 hover:underline font-inter font-regular"
-              >
+              <a href="tel:+380993413857" className="hover:text-red-600 font-inter font-regular">
                 +38 (099) 341 38 57 {t('sale')}
               </a>
             </div>
@@ -107,7 +101,7 @@ export default function Footer() {
           <p className="my-3 font-semibold font-inter">E-mail:</p>
           <a
             href="mailto:info@senso-tape.com"
-            className="hover:text-red-600 hover:underline font-inter font-regular"
+            className="hover:text-red-600 font-inter font-regular"
           >
             info@senso-tape.com
           </a>
@@ -123,7 +117,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="text-red-600 hover:underline font-inter font-light"
         >
-          Impuls Studio
+          Impulse Studio
         </a>
       </p>
     </footer>
