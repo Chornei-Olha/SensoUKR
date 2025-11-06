@@ -100,7 +100,7 @@ export default function Footer() {
 
           <p className="my-3 font-semibold font-inter">E-mail:</p>
           <a
-            href="mailto:info@senso-tape.com"
+            href="mailto:info@senso-tape.com.ua"
             className="hover:text-red-600 font-inter font-regular"
           >
             info@senso-tape.com
