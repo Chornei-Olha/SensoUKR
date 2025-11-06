@@ -14,7 +14,7 @@ export default function ContactForm() {
     email: '',
     phone: '',
     comment: '',
-    agreeProcessing: false,
+    agreeProcessing: true,
     agreePolicy: true,
   });
 
@@ -171,6 +171,7 @@ export default function ContactForm() {
                       name="agreeProcessing"
                       checked={formData.agreeProcessing}
                       onChange={handleChange}
+                      className="accent-[#C52233]"
                     />
                     {t('consent1')}
                   </label>
@@ -181,6 +182,7 @@ export default function ContactForm() {
                       name="agreePolicy"
                       checked={formData.agreePolicy}
                       onChange={handleChange}
+                      className="accent-[#C52233]"
                     />
                     {t('consent2')}
                   </label>
