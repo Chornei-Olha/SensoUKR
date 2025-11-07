@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
@@ -9,30 +9,48 @@ import { Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 
-const boardMembers = [
-  {
-    id: 1,
-    photo: '/images/8.1.webp',
-  },
-  {
-    id: 2,
-    photo: '/images/8.2.webp',
-  },
-  {
-    id: 3,
-    photo: '/images/8.3.webp',
-  },
-  {
-    id: 4,
-    photo: '/images/8.4.webp',
-  },
-  {
-    id: 5,
-    photo: '/images/8.5.webp',
-  },
-];
+// const boardMembers = [
+//   {
+//     id: 1,
+//     photo: '/images/8.1.webp',
+//   },
+//   {
+//     id: 2,
+//     photo: '/images/8.2.webp',
+//   },
+//   {
+//     id: 3,
+//     photo: '/images/8.3.webp',
+//   },
+//   {
+//     id: 4,
+//     photo: '/images/8.4.webp',
+//   },
+//   {
+//     id: 5,
+//     photo: '/images/8.5.webp',
+//   },
+// ];
 
 export default function Buyers() {
+  const locale = useLocale();
+
+  const boardMembers =
+    locale === 'en'
+      ? [
+          { id: 1, photo: '/images/en/8.1.webp' },
+          { id: 2, photo: '/images/en/8.2.webp' },
+          { id: 3, photo: '/images/en/8.3.webp' },
+          { id: 4, photo: '/images/8.4.webp' },
+          { id: 5, photo: '/images/8.5.webp' },
+        ]
+      : [
+          { id: 1, photo: '/images/ua/8.1.webp' },
+          { id: 2, photo: '/images/ua/8.2.webp' },
+          { id: 3, photo: '/images/ua/8.3.webp' },
+          { id: 4, photo: '/images/8.4.webp' },
+          { id: 5, photo: '/images/8.5.webp' },
+        ];
   const t = useTranslations('Buyers');
   const swiperRef = useRef<SwiperType | null>(null);
   const [selectedMember, setSelectedMember] = useState<null | (typeof boardMembers)[0]>(null);

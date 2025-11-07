@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
@@ -51,28 +51,46 @@ export default function Marrone() {
     },
   ];
 
-  const boardMembers = [
-    {
-      id: 1,
-      photo: '/images/2.1.webp',
-    },
-    {
-      id: 2,
-      photo: '/images/2.2.webp',
-    },
-    {
-      id: 3,
-      photo: '/images/2.3.webp',
-    },
-    {
-      id: 4,
-      photo: '/images/2.4.webp',
-    },
-    {
-      id: 5,
-      photo: '/images/2.5.webp',
-    },
-  ];
+  // const boardMembers = [
+  //   {
+  //     id: 1,
+  //     photo: '/images/2.1.webp',
+  //   },
+  //   {
+  //     id: 2,
+  //     photo: '/images/2.2.webp',
+  //   },
+  //   {
+  //     id: 3,
+  //     photo: '/images/2.3.webp',
+  //   },
+  //   {
+  //     id: 4,
+  //     photo: '/images/2.4.webp',
+  //   },
+  //   {
+  //     id: 5,
+  //     photo: '/images/2.5.webp',
+  //   },
+  // ];
+  const locale = useLocale();
+
+  const boardMembers =
+    locale === 'en'
+      ? [
+          { id: 1, photo: '/images/2.1.webp' },
+          { id: 2, photo: '/images/2.2.webp' },
+          { id: 3, photo: '/images/2.3.webp' },
+          { id: 4, photo: '/images/en/1.4.webp' },
+          { id: 5, photo: '/images/2.5.webp' },
+        ]
+      : [
+          { id: 1, photo: '/images/2.1.webp' },
+          { id: 2, photo: '/images/2.2.webp' },
+          { id: 3, photo: '/images/2.3.webp' },
+          { id: 4, photo: '/images/ua/2.4.webp' },
+          { id: 5, photo: '/images/2.5.webp' },
+        ];
 
   const [tab, setTab] = useState('Призначення');
 
