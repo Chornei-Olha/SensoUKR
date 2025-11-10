@@ -28,7 +28,7 @@
   },
   "Buyers": {
     "title": "FOR RETAIL CUSTOMERS",
-    "text": "You can purchase TM SENSO products online and in retail stores of our partners, EPICENTER and ROZETKA."
+    "text": "You can purchase TM SENSO products at retail in EPICENTR shopping centers and in the online store epicentrk.ua"
   },
   "ProductSlider": { "text": "More details" },
   "MaskingTape": {
@@ -52,7 +52,7 @@
     "menu1": "Appointment",
     "menu2": "Technical Specifications",
     "menu3": "Parameters",
-    "mainText": "SENSO BIANCO is an Italian-made masking tape designed for basic tasks. It is made from creped paper, with a natural rubber-based adhesive layer applied on one side. This beige masking tape is convenient to use, easy to remove without leaving adhesive residue, and does not damage the surface. It provides excellent adhesion to glass, films, metals, paints, lacquers, and plastics. Ideal for temporary fixation of parts and elements during assembly and gluing. It is used to protect surfaces during automotive body painting and polishing work. It also helps secure protective films and paper.",
+    "mainText": "SENSO BIANCO is an Italian-made masking tape designed for basic tasks. It is made from creped paper, with a natural rubber-based adhesive layer applied on one side. This white masking tape is convenient to use, easy to remove without leaving adhesive residue, and does not damage the surface. It provides excellent adhesion to glass, films, metals, paints, lacquers, and plastics. Ideal for temporary fixation of parts and elements during assembly and gluing. It is used to protect surfaces during automotive body painting and polishing work. It also helps secure protective films and paper.",
     "text-li1": "Temporary fixation of parts and elements during installation, repair, and gluing work.",
     "text-li2": "Protection of parts during polishing.",
     "text-li3": "Fixing of protective films and paper.",
@@ -73,7 +73,7 @@
     "table-title-col5": "In a box,",
     "table-title-col5-1": "pcs",
     "nameTape": "Automotive Masking Tape",
-    "colorTape": "Beige",
+    "colorTape": "White",
 
     "par-title1": "MECHANICAL RESISTANCE",
     "par-text1": "holding force during grinding and polishing",
