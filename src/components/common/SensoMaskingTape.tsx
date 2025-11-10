@@ -16,7 +16,17 @@ export default function SensoMaskingTape() {
             alt="Маляр красит авто"
             width={1459}
             height={1884}
-            className="w-auto h-[300px] sm:h-[428px] object-cover"
+            className="hidden sm:block w-auto h-[300px] sm:h-[428px] object-cover"
+            priority
+          />
+        </div>
+        <div className="md:w-1/2 w-full -ml-[calc((100vw-100%)/2)]">
+          <Image
+            src="/images/left-bg.webp"
+            alt="Маляр красит авто"
+            width={1459}
+            height={1884}
+            className="block sm:hidden w-[100%] object-contain h-[470px] sm:h-[428px] "
             priority
           />
         </div>
