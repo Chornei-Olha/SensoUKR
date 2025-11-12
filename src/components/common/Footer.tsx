@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer id="footer" className="pb-5">
-      <p className="mb-10 text-gray-600 font-montserrat font-light">
+      <p className="mb-10 text-black font-montserrat font-bold">
         {t('slogan1')} <br />
         {t('slogan2')}
       </p>

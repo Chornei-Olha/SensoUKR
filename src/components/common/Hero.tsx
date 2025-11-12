@@ -29,9 +29,9 @@ export default function Hero() {
               className="object-cover w-full sm:w-[350px] h-auto"
               priority
             />
-            <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
+            {/* <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
               NEW
-            </span>
+            </span> */}
           </div>
         </div>
 
@@ -45,9 +45,9 @@ export default function Hero() {
             className="w-full h-auto object-cover"
             priority
           />
-          <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
+          {/* <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
             NEW
-          </span>
+          </span> */}
         </div>
       </div>
     </section>
