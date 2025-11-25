@@ -31,22 +31,22 @@ export default function Footer() {
               </Link>
             </li> */}
             <li>
-              <Link href="/partnersPage" className="hover:text-red-500 transition-colors">
+              <Link href="/industry" className="hover:text-red-500 transition-colors">
                 {t('menu3')}
               </Link>
             </li>
             <li>
-              <Link href="/dealersPage" className="hover:text-red-500 transition-colors">
+              <Link href="/dealers" className="hover:text-red-500 transition-colors">
                 {t('menu4')}
               </Link>
             </li>
             <li>
-              <Link href="/buyersPage" className="hover:text-red-500 transition-colors">
+              <Link href="/retail" className="hover:text-red-500 transition-colors">
                 {t('menu5')}
               </Link>
             </li>
             <li>
-              <Link href="#footer" className="hover:text-red-500 transition-colors">
+              <Link href="/contacts" className="hover:text-red-500 transition-colors">
                 {t('menu6')}
               </Link>
             </li>

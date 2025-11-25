@@ -1,5 +1,5 @@
 import Header from '@/components/common/Header';
-import Oro from '../../components/common/Oro';
+import Buyers from '@/components/common/Buyers';
 import Footer from '@/components/common/Footer';
 import ContactForm from '../../components/common/ContactForm';
 import { getMessages } from 'next-intl/server';
@@ -9,39 +9,39 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const messages = await getMessages({ locale: params.locale });
 
   return {
-    title: messages.Products.oroTitle,
-    description: messages.Products.oroDescription,
+    title: messages.Cooperation.retailTitle,
+    description: messages.Cooperation.retailDescription,
     alternates: {
-      canonical: messages.Products.Canonical.oro,
+      canonical: messages.Cooperation.Canonical.retail,
     },
     openGraph: {
-      title: messages.Products.oroTitle,
-      description: messages.Products.oroDescription,
+      title: messages.Cooperation.retailTitle,
+      description: messages.Cooperation.retailDescription,
       type: 'website',
-      url: messages.Products.Canonical.oro,
+      url: messages.Cooperation.Canonical.retail,
       images: [
         {
-          url: messages.Products.OG.oroImage,
+          url: messages.Cooperation.OG.retailImage,
           width: 1200,
           height: 630,
-          alt: messages.Products.oroTitle,
+          alt: messages.Cooperation.retailTitle,
         },
       ],
     },
   };
 }
 
-const Products: React.FC = () => {
-  const t = useTranslations('Products');
+const BuyersPage: React.FC = () => {
+  const t = useTranslations('Cooperation');
 
   return (
     <>
-      <h1 className="sr-only">{t('oroH1')}</h1>
+      <h1 className="sr-only">{t('retailH1')}</h1>
 
       <div className="container mx-auto px-4 md:px-8">
         <Header />
-        <Oro />
       </div>
+      <Buyers />
       <div className="container mx-auto px-4 md:px-8">
         <ContactForm />
         <Footer />
@@ -49,4 +49,4 @@ const Products: React.FC = () => {
     </>
   );
 };
-export default Products;
+export default BuyersPage;

@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -11,7 +13,7 @@ const products = [
   { title: 'SENSO MARRONE – AUTO + 110°C', image: '/images/product2.webp', link: '/marrone' },
   { title: 'SENSO ROSSA – AUTO + 120°C', image: '/images/product3.webp', link: '/rossa' },
   { title: 'SENSO ORO – AUTO + 130°C', image: '/images/product4.webp', link: '/oro' },
-  // { title: 'SENSO DUCT TAPE', image: '/images/5.1.webp', link: '/duct' },
+  // { title: 'SENSO DUCT TAPE', image: '/images/5.1.webp', link: '/armored' },
 ];
 
 export default function ProductSlider() {

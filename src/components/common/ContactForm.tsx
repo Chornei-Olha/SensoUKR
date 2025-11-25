@@ -80,7 +80,7 @@ export default function ContactForm() {
               <a href="https://wa.me/380993413857" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="hover:text-green-500 transition-colors" />
               </a>
-              <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/U_P_H_I" target="_blank" rel="noopener noreferrer">
                 <FaTelegramPlane className="hover:text-sky-500 transition-colors" />
               </a>
               <a href="viber://chat?number=+380993413857">

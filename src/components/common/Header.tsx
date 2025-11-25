@@ -114,7 +114,7 @@ export default function Header() {
                   <Link href="/oro" className="block px-4 py-2 hover:bg-red-100">
                     {t('tapes4')}{' '}
                   </Link>
-                  <Link href="/duct" className="block px-4 py-2 hover:bg-red-100">
+                  <Link href="/armored" className="block px-4 py-2 hover:bg-red-100">
                     {t('tapes5')}{' '}
                   </Link>
                 </motion.div>
@@ -145,15 +145,15 @@ export default function Header() {
                   transition={{ duration: 0.2, ease: 'easeOut' }}
                   className="absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50 overflow-hidden"
                 >
-                  <Link href="/partnersPage" className="block px-4 py-2 hover:bg-red-100">
+                  <Link href="/industry" className="block px-4 py-2 hover:bg-red-100">
                     {' '}
                     {t('menu3-1')}{' '}
                   </Link>{' '}
-                  <Link href="/dealersPage" className="block px-4 py-2 hover:bg-red-100">
+                  <Link href="/dealers" className="block px-4 py-2 hover:bg-red-100">
                     {' '}
                     {t('menu3-2')}{' '}
                   </Link>{' '}
-                  <Link href="/buyersPage" className="block px-4 py-2 hover:bg-red-100">
+                  <Link href="/retail" className="block px-4 py-2 hover:bg-red-100">
                     {' '}
                     {t('menu3-3')}{' '}
                   </Link>
@@ -162,7 +162,7 @@ export default function Header() {
             </AnimatePresence>
           </div>
 
-          <Link href="#footer" className={linkClass('#footer')}>
+          <Link href="/contacts" className={linkClass('#footer')}>
             {t('menu4')}{' '}
           </Link>
         </nav>
@@ -247,7 +247,7 @@ export default function Header() {
                   <Link href="/oro" onClick={() => setIsOpen(false)}>
                     {t('tapes4')}{' '}
                   </Link>
-                  <Link href="/duct" onClick={() => setIsOpen(false)}>
+                  <Link href="/armored" onClick={() => setIsOpen(false)}>
                     {t('tapes5')}{' '}
                   </Link>
                 </div>
@@ -268,13 +268,13 @@ export default function Header() {
               </button>
               {collabOpen && (
                 <div className="flex flex-col pl-4 mt-3 space-y-3">
-                  <Link href="/partnersPage" onClick={() => setIsOpen(false)}>
+                  <Link href="/industry" onClick={() => setIsOpen(false)}>
                     {t('menu3-1')}{' '}
                   </Link>
-                  <Link href="/dealersPage" onClick={() => setIsOpen(false)}>
+                  <Link href="/dealers" onClick={() => setIsOpen(false)}>
                     {t('menu3-2')}{' '}
                   </Link>
-                  <Link href="/buyersPage" onClick={() => setIsOpen(false)}>
+                  <Link href="/retail" onClick={() => setIsOpen(false)}>
                     {t('menu3-3')}{' '}
                   </Link>
                 </div>
@@ -282,7 +282,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="#footer"
+              href="/contacts"
               className={`${linkClass('#footer')} flex justify-center items-center w-full`}
               onClick={() => setIsOpen(false)}
             >

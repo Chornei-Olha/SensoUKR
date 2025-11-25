@@ -9,23 +9,25 @@ export const viewport = {
   initialScale: 1,
 };
 
+type Messages = {
+  TabTitles: { home: string };
+  Meta: { description: string };
+};
+
 export async function generateMetadata({ params }: { params: { locale: string } }) {
-  const messages: AbstractIntlMessages = await getMessages({ locale: params.locale });
-  const title = messages.TabTitles?.home;
+  const messages = (await getMessages({ locale: params.locale })) as Messages;
   return {
-    title,
+    openGraph: {
+      type: 'website',
+      locale: 'uk_UA',
+      siteName: 'SENSO Ukraine',
+      url: 'https://senso-tape.com.ua/',
+    },
     icons: {
       icon: [{ url: '/favicon.png', type: 'image/png' }],
     },
   };
 }
-// export const metadata = {
-//   title: 'Senso',
-//   description: 'Ihre vertrauenswürdige Reinigungsfirma mit System, Plan und VerantwortungS',
-//   icons: {
-//     icon: [{ url: '/favicon.png', type: 'image/x-icon' }],
-//   },
-// };
 
 export default async function RootLayout({
   children,
@@ -35,8 +37,27 @@ export default async function RootLayout({
   const messages = await getMessages();
   const locale = await getLocale();
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'SENSO Ukraine',
+    url: 'https://senso-ukr.vercel.app',
+    logo: 'https://senso-ukr.vercel.app/logo.png',
+    description: 'Італійські малярні стрічки SENSO для професійного застосування.',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'UA',
+    },
+  };
+
   return (
     <html lang={locale}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>

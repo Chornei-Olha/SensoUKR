@@ -74,7 +74,7 @@ export default function Rossa() {
   //   },
   // ];
 
-    const locale = useLocale();
+  const locale = useLocale();
 
   const boardMembers =
     locale === 'en'
@@ -151,7 +151,7 @@ export default function Rossa() {
               <div className="h-[400px] flex justify-center items-center overflow-hidden">
                 <Image
                   src={member.photo}
-                  alt="slider"
+                  alt="Червона малярна стрічка SENSO Rossa"
                   width={900}
                   height={500}
                   className="h-full w-auto object-cover rounded-lg"

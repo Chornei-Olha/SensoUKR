@@ -122,7 +122,7 @@ export default function Buyers() {
                 <div className="h-[400px] flex justify-center items-center overflow-hidden">
                   <Image
                     src={member.photo}
-                    alt="slider"
+                    alt="Малярний скотч SENSO на виробництві"
                     width={900}
                     height={500}
                     className="h-full w-auto object-cover rounded-lg"

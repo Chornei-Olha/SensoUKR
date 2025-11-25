@@ -23,7 +23,7 @@ export default function SensoMaskingTape() {
         <div className="md:w-1/2 w-full -ml-[calc((100vw-100%)/2)]">
           <Image
             src="/images/left-bg.webp"
-            alt="Маляр красит авто"
+            alt="Автомаляр використовує стрічку SENSO"
             width={1459}
             height={1884}
             className="block sm:hidden w-[100%] object-contain h-[470px] sm:h-[428px] "

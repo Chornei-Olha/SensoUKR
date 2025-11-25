@@ -150,7 +150,7 @@ export default function Marrone() {
               <div className="h-[400px] flex justify-center items-center overflow-hidden">
                 <Image
                   src={member.photo}
-                  alt="slider"
+                  alt="Коричнева малярна стрічка SENSO Marrone"
                   width={900}
                   height={500}
                   className="h-full w-auto object-cover rounded-lg"
@@ -357,7 +357,7 @@ export default function Marrone() {
 
       {/* Buy buttons */}
       <div className="flex flex-col sm:flex-row justify-start items-left sm:items-center gap-5 my-16 flex-nowrap sm:flex-wrap">
-        <p className="whitespace-nowrap font-inter font-regular">{t('shop')}Б</p>
+        <p className="whitespace-nowrap font-inter font-regular">{t('shop')}</p>
 
         <div className="flex flex-row gap-2 sm:gap-6 items-start">
           <a

@@ -1,5 +1,81 @@
 {
-  "TabTitles": { "home": "Senso" },
+  "TabTitles": { "home": "SENSO — masking tape | Professional masking tape Made in Italy" },
+  "Meta": {
+    "description": "Italian SENSO masking tapes for car painters, production and industry. High adhesion, temperature resistance, FSC and PEFC certification. Wholesale and retail."
+  },
+
+  "Products": {
+    "biancoTitle": "SENSO Bianco — masking tape +80°C | Made in Italy",
+    "biancoDescription": "SENSO Bianco — white masking tape for basic painting tasks. Excellent adhesion, easy to remove, suitable for car, metal, and plastic repairs.",
+    "marroneTitle": "SENSO Marrone — high-temperature masking tape +110°C",
+    "marroneDescription": "Professional SENSO Marrone masking tape. High temperature resistance, clean paint lines, ideal for automotive painting.",
+    "rossaTitle": "SENSO Rossa — red masking tape +120°C",
+    "rossaDescription": "Professional red SENSO ROSSA masking tape. High elasticity, adheres to complex surfaces.",
+    "oroTitle": "SENSO Oro — masking tape +130°C | Professional quality",
+    "oroDescription": "Yellow SENSO Oro masking tape. Highest heat resistance in the lineup, ideal for complex automotive painting. Made in Italy.",
+    "armoredTitle": "SENSO Armored Tape | High Strength",
+    "armoredDescription": "SENSO Armored Tape — for repairs, temporary fixation, and technical tasks. Reinforced structure, strong adhesion.",
+
+    "Canonical": {
+      "bianco": "https://senso-tape.com.ua/bianco",
+      "marrone": "https://senso-tape.com.ua/marrone",
+      "rossa": "https://senso-tape.com.ua/rossa",
+      "oro": "https://senso-tape.com.ua/oro",
+      "armored": "https://senso-tape.com.ua/armored"
+    },
+    "OG": {
+      "biancoImage": "https://senso-tape.com.ua/og-products/bianco.jpg",
+      "marroneImage": "https://senso-tape.com.ua/og-products/marrone.jpg",
+      "rossaImage": "https://senso-tape.com.ua/og-products/rossa.jpg",
+      "oroImage": "https://senso-tape.com.ua/og-products/oro.jpg",
+      "armoredImage": "https://senso-tape.com.ua/og-products/armored.jpg"
+    },
+
+    "biancoH1": "SENSO BIANCO Masking Tape (+80°C)",
+    "marroneH1": "SENSO MARRONE Masking Tape (+110°C)",
+    "rossaH1": "SENSO ROSSA Masking Tape (+120°C)",
+    "oroH1": "SENSO ORO Masking Tape (+130°C)",
+    "armoredH1": "SENSO Armored Tape"
+  },
+
+  "Cooperation": {
+    "mainTitle": "SENSO — masking tapes | Professional masking tape Made in Italy",
+    "mainDescription": "Italian SENSO masking tapes for auto body painting, manufacturing and industry. High adhesion, temperature resistance, FSC and PEFC certification. Wholesale and retail.",
+
+    "industryTitle": "For Industrial Clients | SENSO Tapes for Manufacturing",
+    "industryDescription": "SENSO masking tapes for furniture production, appliances, automotive, aviation, special equipment and mechanical engineering. Wholesale available.",
+
+    "dealersTitle": "For Dealers & Distributors | SENSO Ukraine",
+    "dealersDescription": "We invite dealers, distributors and wholesale partners. Italian SENSO tapes with certifications and high demand.",
+
+    "retailTitle": "For Retail Customers | SENSO Masking Tapes",
+    "retailDescription": "High-quality SENSO masking tape for repairs, painting, polishing and technical work.",
+
+    "contactsTitle": "Contacts | SENSO Ukraine",
+    "contactsDescription": "Contacts of the official SENSO representative in Ukraine. Working hours, phone number, and contact form.",
+
+    "Canonical": {
+      "main": "https://senso-tape.com.ua/",
+      "industry": "https://senso-tape.com.ua/industry",
+      "dealers": "https://senso-tape.com.ua/dealers",
+      "retail": "https://senso-tape.com.ua/retail",
+      "contacts": "https://senso-tape.com.ua/contacts"
+    },
+
+    "OG": {
+      "mainImage": "https://senso-tape.com.ua/og-products/main.jpg",
+      "industryImage": "https://senso-tape.com.ua/og-products/industry.jpg",
+      "dealersImage": "https://senso-tape.com.ua/og-products/dealers.jpg",
+      "retailImage": "https://senso-tape.com.ua/og-products/retail.jpg",
+      "contactsImage": "https://senso-tape.com.ua/og-products/retail.jpg"
+    },
+
+    "mainH1": "SENSO masking tapes — professional solutions made in Italy",
+    "industryH1": "Solutions for Industrial Clients",
+    "dealersH1": "For Dealers and Distributors",
+    "retailH1": "For Retail Customers"
+  },
+
   "Header": {
     "menu1": "Home",
     "menu2": "Products",
@@ -12,11 +88,11 @@
     "tapes2": "Marrone masking tapes brown",
     "tapes3": "Rossa masking tapes red",
     "tapes4": "Oro masking tapes gold",
-    "tapes5": "SENSO duct tape"
+    "tapes5": "SENSO armored tape"
   },
   "Hero": {
     "title": "SENSO masking tapes",
-    "mainText": "are the professional choice in the field of painting solutions. We offer a wide range of masking tapes that meet the requirements of a broad spectrum of tasks and projects. SENSO masking tapes are distinguished by exceptional properties designed to meet the precise demands of various industries."
+    "mainText": "it is a professional choice in the field of masking solutions. We offer a wide range of masking tapes that meet the requirements of a broad spectrum of tasks and projects. SENSO masking tapes are distinguished by exceptional properties designed to meet the precise demands of various industries."
   },
   "Partners": {
     "title": "FOR INDUSTRIAL CLIENTS",

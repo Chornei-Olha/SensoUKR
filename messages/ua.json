@@ -1,5 +1,79 @@
 {
-  "TabTitles": { "home": "Сенсо" },
+  "TabTitles": { "home": "SENSO — малярні стрічки | Професійний маскувальний скотч Made in Italy" },
+  "Meta": {
+    "description": "Італійські малярні стрічки SENSO для автомалярок, виробництва та промисловості. Висока адгезія, стійкість до температур, сертифікація FSC і PEFC. Оптом та в роздріб."
+  },
+
+  "Products": {
+    "biancoTitle": "SENSO Bianco — малярна стрічка +80°C | Made in Italy",
+    "biancoDescription": "SENSO Bianco — біла малярна стрічка для базових лакофарбових робіт. Ідеальна адгезія, легко знімається, підходить для ремонту авто, металу та пластику.",
+    "marroneTitle": "SENSO Marrone — висотемпературна стрічка +110°C",
+    "marroneDescription": "Професійна автомалярна стрічка SENSO Marrone. Висока стійкість до температур, чистий контур фарби, ідеальна для автофарбування.",
+    "rossaTitle": "SENSO Rossa — малярна стрічка червона +120°C",
+    "rossaDescription": "Автомалярна червона стрічка SENSO ROSSA для професійного фарбування. Висока еластичність, адгезія до складних поверхонь.",
+    "oroTitle": "SENSO Oro — малярний скотч +130°C | Професійна якість",
+    "oroDescription": "Жовта малярна стрічка SENSO Oro. Найвища термостійкість у лінійці, підходить для складних автофарбувальних робіт. Made in Italy.",
+    "armoredTitle": "Армована стрічка SENSO | Висока міцність",
+    "armoredDescription": "Армована стрічка SENSO — для ремонту, тимчасової фіксації та технічних робіт. Посилена структура, сильна адгезія.",
+
+    "Canonical": {
+      "bianco": "https://senso-tape.com.ua/bianco",
+      "marrone": "https://senso-tape.com.ua/marrone",
+      "rossa": "https://senso-tape.com.ua/rossa",
+      "oro": "https://senso-tape.com.ua/oro",
+      "armored": "https://senso-tape.com.ua/armored"
+    },
+    "OG": {
+      "biancoImage": "https://senso-tape.com.ua/og-products/bianco.jpg",
+      "marroneImage": "https://senso-tape.com.ua/og-products/marrone.jpg",
+      "rossaImage": "https://senso-tape.com.ua/og-products/rossa.jpg",
+      "oroImage": "https://senso-tape.com.ua/og-products/oro.jpg",
+      "armoredImage": "https://senso-tape.com.ua/og-products/armored.jpg"
+    },
+    "biancoH1": "Малярна стрічка SENSO BIANCO (+80°C)",
+    "marroneH1": "Малярна стрічка SENSO MARRONE (+110°C)",
+    "rossaH1": "Малярна стрічка SENSO ROSSA (+120°C)",
+    "oroH1": "Малярна стрічка SENSO ORO (+130°C)",
+    "armoredH1": "Армована стрічка SENSO"
+  },
+  "Cooperation": {
+    "mainTitle": "SENSO — малярні стрічки | Професійний маскувальний скотч Made in Italy",
+    "mainDescription": "Італійські малярні стрічки SENSO для автомалярок, виробництва та промисловості. Висока адгезія, стійкість до температур, сертифікація FSC і PEFC. Оптом та в роздріб.",
+
+    "industryTitle": "Промисловим клієнтам | SENSO стрічки для виробництва",
+    "industryDescription": "Малярні стрічки SENSO для виробництва меблів, техніки, авто, авіації, спецтехніки та машинобудування. Оптом.",
+
+    "dealersTitle": "Дилерам і дистриб’юторам | SENSO Україна",
+    "dealersDescription": "Запрошуємо дилерів, дистриб’юторів та оптових клієнтів. Італійські малярні стрічки SENSO з сертифікаціями та високим попитом.",
+
+    "retailTitle": "Роздрібним покупцям | Малярні стрічки SENSO",
+    "retailDescription": "Високоякісний малярний скотч SENSO для ремонту, фарбування, полірування та технічних робіт.",
+
+    "contactsTitle": "Контакти SENSO Україна",
+    "contactsDescription": "Контакти офіційного представника SENSO в Україні. Графік роботи, телефон, форма зв’язку.",
+
+    "Canonical": {
+      "main": "https://senso-tape.com.ua/",
+      "industry": "https://senso-tape.com.ua/industry",
+      "dealers": "https://senso-tape.com.ua/dealers",
+      "retail": "https://senso-tape.com.ua/retail",
+      "contacts": "https://senso-tape.com.ua/retail"
+    },
+
+    "OG": {
+      "mainImage": "https://senso-tape.com.ua/og-products/main.jpg",
+      "industryImage": "https://senso-tape.com.ua/og-products/industry.jpg",
+      "dealersImage": "https://senso-tape.com.ua/og-products/dealers.jpg",
+      "retailImage": "https://senso-tape.com.ua/og-products/retail.jpg",
+      "contactsImage": "https://senso-tape.com.ua/og-products/contacts.jpg"
+    },
+
+    "mainH1": "Малярні стрічки SENSO — професійні рішення made in Italy",
+    "industryH1": "Рішення для промислових клієнтів",
+    "dealersH1": "Дистриб'юторам та дилерам",
+    "retailH1": "Роздрібним покупцям"
+  },
+
   "Header": {
     "menu1": "Головна",
     "menu2": "Продукція",
@@ -84,7 +158,18 @@
     "par-title4": "ТЕРМОСТІЙКІСТЬ",
     "par-text4": "до 1 години",
     "par-title5": "БЕЗПЕЧНЕ ВИДАЛЕННЯ",
-    "par-text5": "без слідів і пошкоджень"
+    "par-text5": "без слідів і пошкоджень",
+
+    "Products": {
+      "biancoTitle": "SENSO Bianco — малярна стрічка +80°C | Made in Italy",
+      "biancoDescription": "SENSO Bianco — біла малярна стрічка для базових лакофарбових робіт. Ідеальна адгезія, легко знімається, підходить для ремонту авто, металу та пластику."
+    },
+    "Canonical": {
+      "bianco": "https://senso-tape.com.ua/products/bianco"
+    },
+    "OG": {
+      "biancoImage": "https://senso-tape.com.ua/og-products/bianco.jpg"
+    }
   },
   "Marrone": {
     "shop": "ПРИДБАТИ В РОЗДРІБ",
@@ -126,7 +211,18 @@
     "par-title4": "ТЕРМОСТІЙКІСТЬ",
     "par-text4": "до 1 години",
     "par-title5": "БЕЗПЕЧНЕ ВИДАЛЕННЯ",
-    "par-text5": "без слідів і пошкоджень"
+    "par-text5": "без слідів і пошкоджень",
+
+    "Products": {
+      "marroneTitle": "SENSO Marrone — висотемпературна стрічка +110°C",
+      "marroneDescription": "Професійна автомалярна стрічка SENSO Marrone. Висока стійкість до температур, чистий контур фарби, ідеальна для автофарбування."
+    },
+    "Canonical": {
+      "marrone": "https://senso-tape.com.ua/products/marrone"
+    },
+    "OG": {
+      "marroneImage": "https://senso-tape.com.ua/og-products/marrone.jpg"
+    }
   },
   "Rossa": {
     "shop": "ПРИДБАТИ В РОЗДРІБ",
@@ -168,7 +264,18 @@
     "par-title4": "ТЕРМОСТІЙКІСТЬ",
     "par-text4": "до 1 години",
     "par-title5": "БЕЗПЕЧНЕ ВИДАЛЕННЯ",
-    "par-text5": "без слідів і пошкоджень"
+    "par-text5": "без слідів і пошкоджень",
+
+    "Products": {
+      "rossaTitle": "SENSO Rossa — малярна стрічка червона +120°C",
+      "rossaDescription": "Автомалярна червона стрічка SENSO ROSSA для професійного фарбування. Висока еластичність, адгезія до складних поверхонь."
+    },
+    "Canonical": {
+      "rossa": "https://senso-tape.com.ua/products/rossa"
+    },
+    "OG": {
+      "rossaImage": "https://senso-tape.com.ua/og-products/rossa.jpg"
+    }
   },
   "Oro": {
     "shop": "ПРИДБАТИ В РОЗДРІБ",
@@ -211,7 +318,18 @@
     "par-title4": "ТЕРМОСТІЙКІСТЬ",
     "par-text4": "до 1 години",
     "par-title5": "БЕЗПЕЧНЕ ВИДАЛЕННЯ",
-    "par-text5": "без слідів і пошкоджень"
+    "par-text5": "без слідів і пошкоджень",
+
+    "Products": {
+      "oroTitle": "SENSO Oro — малярний скотч +130°C | Професійна якість",
+      "oroDescription": "Жовта малярна стрічка SENSO Oro. Найвища термостійкість у лінійці, підходить для складних автофарбувальних робіт. Made in Italy."
+    },
+    "Canonical": {
+      "oro": "https://senso-tape.com.ua/products/oro"
+    },
+    "OG": {
+      "oroImage": "https://senso-tape.com.ua/og-products/oro.jpg"
+    }
   },
   "Duct": {
     "shop": "ПРИДБАТИ В РОЗДРІБ",

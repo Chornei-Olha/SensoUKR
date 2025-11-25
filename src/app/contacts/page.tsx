@@ -1,5 +1,4 @@
 import Header from '@/components/common/Header';
-import Oro from '../../components/common/Oro';
 import Footer from '@/components/common/Footer';
 import ContactForm from '../../components/common/ContactForm';
 import { getMessages } from 'next-intl/server';
@@ -9,38 +8,35 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const messages = await getMessages({ locale: params.locale });
 
   return {
-    title: messages.Products.oroTitle,
-    description: messages.Products.oroDescription,
+    title: messages.Cooperation.contactsTitle,
+    description: messages.Cooperation.contactsDescription,
     alternates: {
-      canonical: messages.Products.Canonical.oro,
+      canonical: messages.Cooperation.Canonical.contacts,
     },
     openGraph: {
-      title: messages.Products.oroTitle,
-      description: messages.Products.oroDescription,
+      title: messages.Cooperation.contactsTitle,
+      description: messages.Cooperation.contactsDescription,
       type: 'website',
-      url: messages.Products.Canonical.oro,
+      url: messages.Cooperation.Canonical.contacts,
       images: [
         {
-          url: messages.Products.OG.oroImage,
+          url: messages.Cooperation.OG.contactsImage,
           width: 1200,
           height: 630,
-          alt: messages.Products.oroTitle,
+          alt: messages.Cooperation.contactsTitle,
         },
       ],
     },
   };
 }
 
-const Products: React.FC = () => {
-  const t = useTranslations('Products');
+const ContactsPage: React.FC = () => {
+  const t = useTranslations('Cooperation');
 
   return (
     <>
-      <h1 className="sr-only">{t('oroH1')}</h1>
-
       <div className="container mx-auto px-4 md:px-8">
         <Header />
-        <Oro />
       </div>
       <div className="container mx-auto px-4 md:px-8">
         <ContactForm />
@@ -49,4 +45,4 @@ const Products: React.FC = () => {
     </>
   );
 };
-export default Products;
+export default ContactsPage;
