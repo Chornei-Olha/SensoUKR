@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: messages.Products.rossaTitle,
     description: messages.Products.rossaDescription,
     alternates: {
-      canonical: messages.Canonical.rossa,
+      canonical: messages.Products.Canonical.rossa,
     },
     openGraph: {
       title: messages.Products.rossaTitle,
