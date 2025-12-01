@@ -170,7 +170,7 @@ export default function Header() {
         <div className="absolute left-[25px] top-1/2 transform -translate-y-1/2 hidden md:flex flex-col items-center gap-[46px] bg-black/10 rounded-[36px] px-[15px] py-[25px] z-20">
           {[
             { text: 'YOUTUBE', href: 'https://www.youtube.com/' },
-            { text: 'INSTAGRAM', href: 'https://instagram.com/yourprofile' },
+            { text: 'INSTAGRAM', href: 'https://www.instagram.com/senso_tm_ua/' },
           ].map(({ text, href }, idx) => (
             <a
               key={idx}
@@ -309,7 +309,11 @@ export default function Header() {
               <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                 <Image src="/images/youtube.png" alt="Youtube" width={24} height={24} />
               </a>
-              <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/senso_tm_ua/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image src="/images/instagram.png" alt="Instagram" width={24} height={24} />
               </a>
             </div>
