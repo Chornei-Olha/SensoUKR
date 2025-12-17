@@ -36,8 +36,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function Products({ params }: { params: { locale: string } }) {
-  const messages = await getMessages({ locale: params.locale });
+export default function Products({ params }: { params: { locale: string } }) {
   const t = useTranslations('Products');
 
   return (
