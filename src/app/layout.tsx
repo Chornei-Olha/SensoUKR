@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/index.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getLocale } from 'next-intl/server';
-import { AbstractIntlMessages } from 'next-intl';
+import type { Metadata } from 'next';
 
 export const viewport = {
   width: 'device-width',
@@ -14,8 +14,11 @@ type Messages = {
   Meta: { description: string };
 };
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
-  const messages = (await getMessages({ locale: params.locale })) as Messages;
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
   return {
     openGraph: {
       type: 'website',
@@ -31,11 +34,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 
 export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
-  const messages = await getMessages();
-  const locale = await getLocale();
+  params: { locale: string };
+}) {
+  const messages = await getMessages({ locale: params.locale });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -51,7 +55,7 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang={locale}>
+    <html lang={params.locale}>
       <head>
         <script
           type="application/ld+json"

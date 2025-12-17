@@ -20,13 +20,18 @@ export default function ContactForm() {
 
   const [showThankYou, setShowThankYou] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    let newValue = type === 'checkbox' ? checked : value;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value, type } = e.target;
 
-    if (name === 'phone') {
+    let newValue: string | boolean = value;
+
+    if (type === 'checkbox' && 'checked' in e.target) {
+      newValue = e.target.checked;
+    }
+
+    if (name === 'phone' && typeof newValue === 'string') {
       newValue = newValue.replace(/\D/g, ''); // только цифры
-      if (newValue.length > 9) newValue = newValue.slice(0, 9); // максимум 9 цифр
+      if (newValue.length > 9) newValue = newValue.slice(0, 9);
     }
 
     setFormData({
@@ -35,7 +40,7 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {

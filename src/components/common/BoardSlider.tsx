@@ -41,7 +41,7 @@ export default function BoardSlider() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [selectedMember, setSelectedMember] = useState<null | (typeof boardMembers)[0]>(null);
   const [maxHeight, setMaxHeight] = useState(0);
-  const cardRefs = useRef<HTMLDivElement[]>([]);
+  const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   // Рассчитать максимальную высоту карточек
   useLayoutEffect(() => {
@@ -142,7 +142,9 @@ export default function BoardSlider() {
           {boardMembers.map((member, index) => (
             <SwiperSlide key={member.id}>
               <div
-                ref={(el) => (cardRefs.current[index] = el!)}
+                ref={(el: HTMLDivElement | null) => {
+                  cardRefs.current[index] = el;
+                }}
                 style={{ height: maxHeight || 'auto' }}
                 className="flex flex-col p-2 border rounded-xl shadow-md bg-white"
               >

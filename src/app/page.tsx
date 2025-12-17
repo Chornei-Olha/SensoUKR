@@ -6,8 +6,13 @@ import BoardSlider from '../components/common/BoardSlider';
 import Footer from '@/components/common/Footer';
 import { getMessages } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import type { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
   const messages = await getMessages({ locale: params.locale });
 
   return {
@@ -32,7 +37,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
   };
 }
-const HomePage: React.FC = () => {
+
+export default function HomePage({ params }: { params: { locale: string } }) {
   const t = useTranslations('Cooperation');
 
   return (
@@ -47,5 +53,4 @@ const HomePage: React.FC = () => {
       <Footer />
     </div>
   );
-};
-export default HomePage;
+}

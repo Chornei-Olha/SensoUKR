@@ -4,8 +4,13 @@ import Footer from '@/components/common/Footer';
 import ContactForm from '../../components/common/ContactForm';
 import { getMessages } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import type { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
   const messages = await getMessages({ locale: params.locale });
 
   return {
@@ -31,7 +36,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   };
 }
 
-const BuyersPage: React.FC = () => {
+export default function BuyersPage({ params }: { params: { locale: string } }) {
   const t = useTranslations('Cooperation');
 
   return (
@@ -41,12 +46,13 @@ const BuyersPage: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <Header />
       </div>
+
       <Buyers />
+
       <div className="container mx-auto px-4 md:px-8">
         <ContactForm />
         <Footer />
       </div>
     </>
   );
-};
-export default BuyersPage;
+}
