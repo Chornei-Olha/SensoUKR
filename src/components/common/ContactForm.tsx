@@ -31,7 +31,7 @@ export default function ContactForm() {
 
     if (name === 'phone' && typeof newValue === 'string') {
       newValue = newValue.replace(/\D/g, ''); // только цифры
-      if (newValue.length > 9) newValue = newValue.slice(0, 9);
+      if (newValue.length > 10) newValue = newValue.slice(0, 9);
     }
 
     setFormData({
