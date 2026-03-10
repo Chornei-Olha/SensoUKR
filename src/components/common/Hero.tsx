@@ -38,11 +38,11 @@ export default function Hero() {
         {/* Большое фото */}
         <div className="mt-8 relative">
           <Image
-            src="/images/bg.png"
+            src="/images/bg.webp"
             alt="Senso Tape Rolls"
             width={5568}
             height={2096}
-            className="w-full h-auto object-cover"
+            className="w-full h-[250px] sm:h-[500px] object-cover"
             priority
           />
           {/* <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
