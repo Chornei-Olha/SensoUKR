@@ -292,8 +292,8 @@ export default function Marrone() {
                 </tr>
                 <tr>
                   <td className="border px-3 py-2">SM48</td>
-                  <td className="border px-3 py-2">Стрічка автомобільна SENSO MARRONE +110ºC</td>
-                  <td className="border px-3 py-2">Коричневий</td>
+                  <td className="border px-3 py-2">{t('nameTape')} SENSO MARRONE +110ºC</td>
+                  <td className="border px-3 py-2">{t('colorTape')}</td>
                   <td className="border px-3 py-2">48mm*40yd</td>
                   <td className="border px-3 py-2">12</td>
                 </tr>

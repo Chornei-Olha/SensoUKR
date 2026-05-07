@@ -79,7 +79,7 @@ export default function Header() {
           </Link>
 
           {/* Выпадающее меню Продукція */}
-          <div
+          {/* <div
             className="relative"
             onMouseEnter={() => setProductOpen(true)}
             onMouseLeave={() => setProductOpen(false)}
@@ -120,7 +120,10 @@ export default function Header() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
+          <Link href="/products" className={`${linkClass('/products')} cursor-pointer`}>
+            {t('menu2')}
+          </Link>
 
           {/* Выпадающее меню Співпраця */}
           <div
@@ -222,7 +225,7 @@ export default function Header() {
               {t('menu1')}{' '}
             </Link>
 
-            <div>
+            {/* <div>
               <button
                 className="w-full flex justify-left items-center gap-2 hover:bg-gray-100 rounded"
                 onClick={() => setProductOpen(!productOpen)}
@@ -252,7 +255,14 @@ export default function Header() {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
+            <Link
+              href="/products"
+              className="w-full flex justify-center items-center py-2 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              {t('menu2')}
+            </Link>
 
             {/* Мобильное выпадающее меню */}
             <div>
