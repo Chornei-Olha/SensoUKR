@@ -1282,10 +1282,20 @@
     "aerosolsLubricants": "Aerosols & Lubricants",
     "glue": "Adhesives"
   },
-  "reinforcedTapes": {
+  "ReinforcedTapes": {
     "title": "Reinforced Tapes"
   },
   "DoubleSidedTapes": {
     "title": "Double-Sided Tapes"
+  },
+  "ProductsPage": {
+    "title": "SENSO Products",
+    "categories": {
+      "paintingTapes": "Masking Tapes",
+      "reinforcedTapes": "Reinforced Tapes",
+      "doubleSidedTapes": "Double-Sided Tapes",
+      "aerosolsLubricants": "Aerosols & Lubricants",
+      "adhesives": "Adhesives"
+    }
   }
 }

@@ -6,12 +6,12 @@ const products = [
   {
     key: 'serieTecnico',
     href: '/serie-tecnico',
-    image: '/images/1.1.webp',
+    image: '/images/serie-tecnico.png',
   },
   {
     key: 'olioSilicone',
     href: '/olio-di-silicone',
-    image: '/images/1.1.webp',
+    image: '/images/olio-silicone.png',
   },
 ];
 

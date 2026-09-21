@@ -1510,8 +1510,20 @@
     "aerosolsLubricants": "Аерозолі та мастила",
     "glue": "Клей"
   },
-  "reinforcedTapes": "Армовані стрічки",
+  "ReinforcedTapes": {
+    "title": "Армовані стрічки"
+  },
   "DoubleSidedTapes": {
     "title": "Двосторонні стрічки"
+  },
+  "ProductsPage": {
+    "title": "Продукція SENSO",
+    "categories": {
+      "paintingTapes": "Малярні стрічки",
+      "reinforcedTapes": "Армовані стрічки",
+      "doubleSidedTapes": "Двосторонні стрічки",
+      "aerosolsLubricants": "Аерозолі та мастила",
+      "adhesives": "Клеї"
+    }
   }
 }

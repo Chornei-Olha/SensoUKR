@@ -7,37 +7,37 @@ const products = [
     key: 'fixCrystal',
     title: 'FIX-CRYSTAL',
     href: '/fix-crystal',
-    image: '/images/1.1.webp',
+    image: '/images/fix-crystal.png',
   },
   {
     key: 'fixSteel',
     title: 'FIX-STEEL',
     href: '/fix-steel',
-    image: '/images/1.1.webp',
+    image: '/images/fix-steel.png',
   },
   {
     key: 'fixExtreme',
     title: 'FIX-EXTREME',
     href: '/fix-extreme',
-    image: '/images/1.1.webp',
+    image: '/images/fix-extreme.png',
   },
   {
     key: 'fixSlim',
     title: 'FIX-SLIM',
     href: '/fix-slim',
-    image: '/images/1.1.webp',
+    image: '/images/fix-slim.png',
   },
   {
     key: 'fixInterior',
     title: 'FIX-INTERIOR',
     href: '/fix-interior',
-    image: '/images/1.1.webp',
+    image: '/images/fix-interior.png',
   },
   {
     key: 'fixCraft',
     title: 'FIX-CRAFT',
     href: '/fix-craft',
-    image: '/images/1.1.webp',
+    image: '/images/fix-craft.png',
   },
 ];
 

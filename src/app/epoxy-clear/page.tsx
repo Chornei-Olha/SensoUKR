@@ -38,7 +38,7 @@ export default function EpoxyClearPage() {
 
         <ProductDetail
           title={t('title')}
-          images={['/images/1.1.webp']}
+          images={['/images/epoxy-clear.png']}
           purposeTitle={t('purposeTitle')}
           purposeText={t('purposeText')}
           advantagesTitle={t('advantagesTitle')}

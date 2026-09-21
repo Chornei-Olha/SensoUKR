@@ -6,27 +6,27 @@ const products = [
   {
     key: 'steelGray',
     href: '/steel-gray',
-    image: '/images/1.1.webp',
+    image: '/images/steel-gray.png',
   },
   {
     key: 'stoneBeige',
     href: '/stone-beige',
-    image: '/images/1.1.webp',
+    image: '/images/stone-beige.png',
   },
   {
     key: 'totalBlack',
     href: '/total-black',
-    image: '/images/1.1.webp',
+    image: '/images/total-black.png',
   },
   {
     key: 'epoxyGray',
     href: '/epoxy-gray',
-    image: '/images/1.1.webp',
+    image: '/images/epoxy-gray.png',
   },
   {
     key: 'epoxyClear',
     href: '/epoxy-clear',
-    image: '/images/1.1.webp',
+    image: '/images/epoxy-clear.png',
   },
 ];
 

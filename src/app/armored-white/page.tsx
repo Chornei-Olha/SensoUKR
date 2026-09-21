@@ -46,7 +46,7 @@ export default function ArmoredWhitePage() {
 
         <ProductDetail
           title={t('title')}
-          images={['/images/5.1.webp']}
+          images={['/images/category-reinforced-tapes.png']}
           purposeTitle={t('purposeTitle')}
           purposeText={t('purposeText')}
           applicationTitle={t('applicationTitle')}

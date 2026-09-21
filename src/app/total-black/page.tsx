@@ -38,7 +38,7 @@ export default function TotalBlackPage() {
 
         <ProductDetail
           title={t('title')}
-          images={['/images/1.1.webp']}
+          images={['/images/total-black.png']}
           purposeTitle={t('purposeTitle')}
           purposeText={t('purposeText')}
           advantagesTitle={t('advantagesTitle')}

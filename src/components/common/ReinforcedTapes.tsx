@@ -7,19 +7,19 @@ const products = [
     key: 'armoredWhite',
     title: 'SENSO WHITE',
     href: '/armored-white',
-    image: '/images/5.1.webp',
+    image: '/images/category-reinforced-tapes.png',
   },
   {
     key: 'armoredGrey',
     title: 'SENSO GREY',
     href: '/armored-grey',
-    image: '/images/5.1.webp',
+    image: '/images/category-reinforced-tapes.png',
   },
   {
     key: 'armoredBlack',
     title: 'SENSO BLACK',
     href: '/armored-black',
-    image: '/images/5.1.webp',
+    image: '/images/category-reinforced-tapes.png',
   },
 ];
 

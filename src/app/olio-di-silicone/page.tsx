@@ -38,7 +38,7 @@ export default function OlioDiSiliconePage() {
 
         <ProductDetail
           title={t('title')}
-          images={['/images/1.1.webp']}
+          images={['/images/olio-silicone.png']}
           purposeTitle={t('purposeTitle')}
           purposeText={t('purposeText')}
           advantagesTitle={t('advantagesTitle')}
