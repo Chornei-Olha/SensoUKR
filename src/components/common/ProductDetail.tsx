@@ -95,7 +95,7 @@ export default function ProductDetail({
           >
             {images.map((image, index) => (
               <SwiperSlide key={`${image}-${index}`}>
-                <div className="relative aspect-square bg-gray-100 rounded-xl overflow-hidden">
+                <div className="relative aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden">
                   <Image
                     src={image}
                     alt={`${title} ${index + 1}`}

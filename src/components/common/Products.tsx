@@ -44,7 +44,7 @@ export default function Products() {
           {categories.map((category) => (
             <Link key={category.key} href={category.href} className="group block">
               <article className="h-full bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
+                <div className="relative w-full aspect-[3/2] overflow-hidden bg-gray-100">
                   <Image
                     src={category.image}
                     alt={t(`categories.${category.key}`)}

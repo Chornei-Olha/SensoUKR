@@ -48,7 +48,8 @@ export default function Glue() {
               className="group block border-b border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-sm"
             >
               <div className="flex gap-5 sm:gap-8 py-6 px-2 sm:px-4">
-                <div className="relative w-[110px] h-[110px] sm:w-[150px] sm:h-[150px] shrink-0 overflow-hidden rounded-lg bg-white">
+                <div className="relative w-[110px] sm:w-[150px] aspect-[4/5] shrink-0 overflow-hidden rounded-lg bg-white">
+                  {' '}
                   <Image
                     src={product.image}
                     alt={t(`products.${product.key}.title`)}

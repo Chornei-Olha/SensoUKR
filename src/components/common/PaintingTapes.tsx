@@ -55,7 +55,7 @@ export default function PaintingTapes() {
                 href={product.href}
                 className="group block border-b border-gray-200 transition-all duration-300 hover:bg-gray-50 hover:shadow-sm cursor-pointer"
               >
-                <div className="flex gap-5 sm:gap-8 py-6 px-2 sm:px-4">
+                <div className="flex items-center gap-5 sm:gap-8 py-6 px-2 sm:px-4">
                   <div className="relative w-[110px] h-[110px] sm:w-[150px] sm:h-[150px] shrink-0 overflow-hidden rounded-lg bg-gray-100">
                     <Image
                       src={product.image}
@@ -65,16 +65,22 @@ export default function PaintingTapes() {
                     />
                   </div>
 
-                  <div className="flex flex-col justify-center">
-                    <h2 className="font-montserrat text-xl sm:text-2xl font-semibold text-gray-900 group-hover:text-red-600 transition-colors">
-                      {product.title}
-                    </h2>
+                  <div className="flex flex-1 items-center justify-between gap-4">
+                    <div className="flex flex-col justify-center">
+                      <h2 className="font-montserrat text-xl sm:text-2xl font-semibold text-gray-900 group-hover:text-red-600 transition-colors">
+                        {product.title}
+                      </h2>
 
-                    <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-1 font-montserrat text-sm sm:text-base text-gray-600">
-                      {characteristics.map((item, index) => (
-                        <p key={index}>{item}</p>
-                      ))}
+                      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-1 font-montserrat text-sm sm:text-base text-gray-600">
+                        {characteristics.map((item, index) => (
+                          <p key={index}>{item}</p>
+                        ))}
+                      </div>
                     </div>
+
+                    <span className="shrink-0 text-xl text-gray-400 transition-all duration-300 group-hover:text-red-600 group-hover:translate-x-1">
+                      →
+                    </span>
                   </div>
                 </div>
               </Link>
