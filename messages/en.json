@@ -1,9 +1,10 @@
 {
-  "TabTitles": { "home": "SENSO — masking tape | Professional masking tape Made in Italy" },
+  "TabTitles": {
+    "home": "SENSO — masking tape | Professional masking tape Made in Italy"
+  },
   "Meta": {
     "description": "Italian SENSO masking tapes for car painters, production and industry. High adhesion, temperature resistance, FSC and PEFC certification. Wholesale and retail."
   },
-
   "Products": {
     "biancoTitle": "SENSO Bianco — masking tape +80°C | Made in Italy",
     "biancoDescription": "SENSO Bianco — white masking tape for basic painting tasks. Excellent adhesion, easy to remove, suitable for car, metal, and plastic repairs.",
@@ -15,7 +16,6 @@
     "oroDescription": "Yellow SENSO Oro masking tape. Highest heat resistance in the lineup, ideal for complex automotive painting. Made in Italy.",
     "armoredTitle": "SENSO Armored Tape | High Strength",
     "armoredDescription": "SENSO Armored Tape — for repairs, temporary fixation, and technical tasks. Reinforced structure, strong adhesion.",
-
     "Canonical": {
       "bianco": "https://senso-tape.com.ua/bianco",
       "marrone": "https://senso-tape.com.ua/marrone",
@@ -30,30 +30,23 @@
       "oroImage": "https://senso-tape.com.ua/og-products/oro.jpg",
       "armoredImage": "https://senso-tape.com.ua/og-products/armored.jpg"
     },
-
     "biancoH1": "SENSO BIANCO Masking Tape (+80°C)",
     "marroneH1": "SENSO MARRONE Masking Tape (+110°C)",
     "rossaH1": "SENSO ROSSA Masking Tape (+120°C)",
     "oroH1": "SENSO ORO Masking Tape (+130°C)",
     "armoredH1": "SENSO Armored Tape"
   },
-
   "Cooperation": {
     "mainTitle": "SENSO — masking tapes | Professional masking tape Made in Italy",
     "mainDescription": "Italian SENSO masking tapes for auto body painting, manufacturing and industry. High adhesion, temperature resistance, FSC and PEFC certification. Wholesale and retail.",
-
     "industryTitle": "For Industrial Clients | SENSO Tapes for Manufacturing",
     "industryDescription": "SENSO masking tapes for furniture production, appliances, automotive, aviation, special equipment and mechanical engineering. Wholesale available.",
-
     "dealersTitle": "For Dealers & Distributors | SENSO Ukraine",
     "dealersDescription": "We invite dealers, distributors and wholesale partners. Italian SENSO tapes with certifications and high demand.",
-
     "retailTitle": "For Retail Customers | SENSO Masking Tapes",
     "retailDescription": "High-quality SENSO masking tape for repairs, painting, polishing and technical work.",
-
     "contactsTitle": "Contacts | SENSO Ukraine",
     "contactsDescription": "Contacts of the official SENSO representative in Ukraine. Working hours, phone number, and contact form.",
-
     "Canonical": {
       "main": "https://senso-tape.com.ua/",
       "industry": "https://senso-tape.com.ua/industry",
@@ -61,7 +54,6 @@
       "retail": "https://senso-tape.com.ua/retail",
       "contacts": "https://senso-tape.com.ua/contacts"
     },
-
     "OG": {
       "mainImage": "https://senso-tape.com.ua/og-products/main.jpg",
       "industryImage": "https://senso-tape.com.ua/og-products/industry.jpg",
@@ -69,13 +61,11 @@
       "retailImage": "https://senso-tape.com.ua/og-products/retail.jpg",
       "contactsImage": "https://senso-tape.com.ua/og-products/retail.jpg"
     },
-
     "mainH1": "SENSO masking tapes — professional solutions made in Italy",
     "industryH1": "Solutions for Industrial Clients",
     "dealersH1": "For Dealers and Distributors",
     "retailH1": "For Retail Customers"
   },
-
   "Header": {
     "menu1": "Home",
     "menu2": "Products",
@@ -99,9 +89,9 @@
     "title": "SENSO masking tapes",
     "mainText": "it is a professional choice in the field of masking solutions. We offer a wide range of masking tapes that meet the requirements of a broad spectrum of tasks and projects. SENSO masking tapes are distinguished by exceptional properties designed to meet the precise demands of various industries."
   },
-
-  "allProducts": { "title": "SENSO Products" },
-
+  "allProducts": {
+    "title": "SENSO Products"
+  },
   "Partners": {
     "title": "FOR INDUSTRIAL CLIENTS",
     "text": "TM SENSO provides ready solutions to meet various needs in the machinery, defense, woodworking, paper and cardboard, construction, and agribusiness industries. The masking tapes have a wide range of applications in furniture production, refrigeration equipment, UAVs, and other complex technical devices. SENSO tapes are chosen for the production and repair of wagons, vehicles, agricultural machinery, and other means of transport."
@@ -114,7 +104,9 @@
     "title": "FOR RETAIL CUSTOMERS",
     "text": "You can purchase TM SENSO products at retail in EPICENTR shopping centers and in the online store epicentrk.ua"
   },
-  "ProductSlider": { "text": "More details" },
+  "ProductSlider": {
+    "text": "More details"
+  },
   "MaskingTape": {
     "text1": "The tapes are manufactured in Italy in accordance with international standards, ensuring consistently high levels of quality and performance. The products are FSC® and PEFC™ certified, confirming the use of raw materials from controlled and sustainable sources.",
     "text2": "UKRPAK HOLDING INDUSTRY is the exclusive representative and importer of the SENSO™ trademark in Ukraine and Eastern Europe. We offer favorable cooperation terms for distributors, dealers, industrial and manufacturing enterprises, car service centers, and auto painters.",
@@ -142,14 +134,12 @@
     "text-li3": "Fixing of protective films and paper.",
     "text-li4": "Masking of surfaces and elements during body painting and repair work.",
     "certification": "SENSO BIANCO Automotive Masking Tape certified by FSC® and PEFC:",
-
     "char-li1": "Base material: Creped paper",
     "char-li2": "Adhesive: Natural rubber",
     "char-li3": "Thickness: 120 µm",
     "char-li4": "Paper density: 90 g/m²",
     "char-li5": "Elongation: 6%",
     "char-li6": "Adhesion: 2.1 N/cm",
-
     "table-title-col1": "Article",
     "table-title-col2": "Name",
     "table-title-col3": "Color",
@@ -158,7 +148,6 @@
     "table-title-col5-1": "pcs",
     "nameTape": "Automotive Masking Tape",
     "colorTape": "White",
-
     "par-title1": "MECHANICAL RESISTANCE",
     "par-text1": "holding force during grinding and polishing",
     "par-title2": "ELASTICITY",
@@ -184,14 +173,12 @@
     "text-li6": "Temporary fixation of parts and elements during installation, repair, and gluing.",
     "text-li7": "Protection of adjacent areas and parts during painting.",
     "certification": "SENSO MARRONE Automotive Masking Tape certified by FSC® and PEFC:",
-
     "char-li1": "Base material: Creped paper",
     "char-li2": "Adhesive: Natural rubber",
     "char-li3": "Thickness: 120 µm",
     "char-li4": "Paper density: 93 g/m²",
     "char-li5": "Elongation: 6%",
     "char-li6": "Adhesion: 2.3 N/cm",
-
     "table-title-col1": "Article",
     "table-title-col2": "Name",
     "table-title-col3": "Color",
@@ -200,7 +187,6 @@
     "table-title-col5-1": "pcs",
     "nameTape": "Automotive Masking Tape",
     "colorTape": "Brown",
-
     "par-title1": "MECHANICAL RESISTANCE",
     "par-text1": "holding force during grinding and polishing",
     "par-title2": "ELASTICITY",
@@ -226,14 +212,12 @@
     "text-li6": "Temporary fixation of parts and elements during installation, repair, and gluing tasks.",
     "text-li7": "Protection of adjacent areas and parts during painting.",
     "certification": "SENSO ROSSA Automotive Masking Tape certified by FSC® and PEFC:",
-
     "char-li1": "Base material: Creped paper",
     "char-li2": "Adhesive: Natural rubber",
     "char-li3": "Thickness: 125 µm",
     "char-li4": "Paper density: 95 g/m²",
     "char-li5": "Elongation: 7%",
     "char-li6": "Adhesion: 2.5 N/cm",
-
     "table-title-col1": "Article",
     "table-title-col2": "Name",
     "table-title-col3": "Color",
@@ -242,7 +226,6 @@
     "table-title-col5-1": "pcs",
     "nameTape": "Automotive Masking Tape",
     "colorTape": "Red",
-
     "par-title1": "MECHANICAL RESISTANCE",
     "par-text1": "holding force during grinding and polishing",
     "par-title2": "ELASTICITY",
@@ -269,14 +252,12 @@
     "text-li7": "Temporary fixation of parts and elements during assembly, repair, and gluing.",
     "text-li8": "Protection of adjacent areas and parts during painting.",
     "certification": "SENSO ORO Automotive Masking Tape certified by FSC® and PEFC:",
-
     "char-li1": "Base material: Creped paper",
     "char-li2": "Adhesive: Natural rubber",
     "char-li3": "Thickness: 125 µm",
     "char-li4": "Paper density: 95 g/m²",
     "char-li5": "Elongation: 8%",
     "char-li6": "Adhesion: 2.7 N/cm",
-
     "table-title-col1": "Article",
     "table-title-col2": "Name",
     "table-title-col3": "Color",
@@ -285,7 +266,6 @@
     "table-title-col5-1": "pcs",
     "nameTape": "Automotive Masking Tape",
     "colorTape": "Yellow",
-
     "par-title1": "MECHANICAL RESISTANCE",
     "par-text1": "holding force during grinding and polishing",
     "par-title2": "ELASTICITY",
@@ -313,7 +293,6 @@
     "text-li8": "Protection of parts during polishing and grinding.",
     "text-li9": "Fixation of protective films, sheets, and floor coverings.",
     "certification": "SENSO ORO Automotive Masking Tape certified by FSC® and PEFC:",
-
     "char-li1": "Base material: synthetic fabric laminated with PE",
     "char-li2": "Adhesive: synthetic rubber",
     "char-li3": "Thickness: 300 µm",
@@ -321,7 +300,6 @@
     "char-li5": "Elongation: 16%",
     "char-li6": "Adhesion: 14.2 N/cm",
     "char-li7": "Temperature resistance: from -20°C to +80°C",
-
     "adv-title": "Advantages",
     "adv-li1": "Strong base with a thickness of 300 µm.",
     "adv-li2": "Excellent adaptation to various surface textures and shapes.",
@@ -330,7 +308,6 @@
     "adv-li5": "Ultra-high resistance to longitudinal stretching.",
     "adv-li6": "High holding strength against mechanical loads.",
     "adv-li7": "Easy to use — can be torn across by hand.",
-
     "table-title-col1": "Article",
     "table-title-col2": "Name",
     "table-title-col3": "Color",
@@ -341,7 +318,6 @@
     "colorTape1": "White",
     "colorTape2": "Grey",
     "colorTape3": "Black",
-
     "par-title1": "MECHANICAL STRENGTH",
     "par-text1": "holding force under load",
     "par-title2": "RESISTANCE TO ADVERSE CONDITIONS",
@@ -386,5 +362,930 @@
     "weekend": "SAT-SUN 10.00 - 16.00",
     "office": "(office)",
     "sale": "(sales department)"
+  },
+  "ArmoredGrey": {
+    "title": "SENSO reinforced tape — grey",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications",
+      "parameters": "Parameters"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "SENSO DUCT TAPE grey is an ultra-strong adhesive reinforced tape made in Italy, designed for a wide range of repair and installation works. It consists of a double-layer composite material made of fabric laminated with polyethylene. The adhesive layer is based on synthetic rubber (hot melt) and provides high adhesion. With a thickness of 300 microns, the reinforced SENSO tape is highly resistant to longitudinal tearing while still being easy to tear across by hand for convenient use. The technical reinforced tape has excellent adhesion to aluminum, steel, wood, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass. It is ideal for repair and construction work and is also used in industrial production. It is suitable for temporary and long-term fixation of various parts, structures, elements, and components.",
+    "applicationTitle": "Applications",
+    "applications": {
+      "1": "Fixation of various parts, structures, elements, and components.",
+      "2": "Sealing and insulation of joints, seams, and connections.",
+      "3": "Repair works in heating, ventilation, and water supply systems.",
+      "4": "Bonding and packaging in warehouse and transport logistics.",
+      "5": "Temporary fixation of parts during installation, repair, and gluing works.",
+      "6": "Used in automotive, woodworking, furniture, agricultural, defense, and other industries.",
+      "7": "Production of UAVs (unmanned aerial vehicles, drones).",
+      "8": "Protection of parts during polishing and grinding.",
+      "9": "Fixation of protective films, sheets, and floor coverings."
+    },
+    "advantagesTitle": "Advantages",
+    "advantages": {
+      "1": "Strong base with a thickness of 300 µm.",
+      "2": "Excellent adaptation to various surface textures and shapes.",
+      "3": "Resistance to sunlight, humidity, low and high temperatures.",
+      "4": "Excellent adhesion to aluminum, steel, wood, films, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass.",
+      "5": "Ultra-high resistance to longitudinal stretching.",
+      "6": "High holding strength against mechanical loads.",
+      "7": "Easy to use — can be torn across by hand."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Base material: synthetic fabric laminated with PE.",
+      "2": "Adhesive: synthetic rubber.",
+      "3": "Color: grey.",
+      "4": "Thickness: 300 µm.",
+      "5": "Paper density: 95 g/m².",
+      "6": "Elongation: 16%.",
+      "7": "Adhesion: 14.2 N/cm.",
+      "8": "Temperature resistance: from -20 to +80°C.",
+      "9": "Size: 48 mm × 5 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "row": {
+        "article": "SRT485G",
+        "name": "SENSO reinforced repair tape",
+        "color": "Grey",
+        "size": "48 mm × 5 m",
+        "quantity": "12"
+      }
+    },
+    "parametersTitle": "Parameters",
+    "parameters": {
+      "1": {
+        "title": "Mechanical strength",
+        "description": "Holding force under load",
+        "value": "6"
+      },
+      "2": {
+        "title": "Resistance to adverse conditions",
+        "description": "UV radiation, humidity, temperature fluctuations",
+        "value": "5"
+      },
+      "3": {
+        "title": "Adhesion strength",
+        "description": "Aluminum, steel, wood, films, ceramics, textiles, rubber, plastics, glass, etc.",
+        "value": "6"
+      },
+      "4": {
+        "title": "Surface compatibility",
+        "description": "Smooth, porous, rough, uneven",
+        "value": "5"
+      },
+      "5": {
+        "title": "Clean removal",
+        "description": "Without adhesive residue",
+        "value": "4"
+      }
+    }
+  },
+  "ArmoredWhite": {
+    "title": "SENSO reinforced tape — white",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications",
+      "parameters": "Parameters"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "SENSO DUCT TAPE white is an ultra-strong adhesive reinforced tape made in Italy, designed for a wide range of repair and installation works. It consists of a double-layer composite material made of fabric laminated with polyethylene. The adhesive layer is based on synthetic rubber (hot melt) and provides high adhesion. With a thickness of 300 microns, the reinforced SENSO tape is highly resistant to longitudinal tearing while still being easy to tear across by hand for convenient use. The technical reinforced tape has excellent adhesion to aluminum, steel, wood, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass. It is ideal for repair and construction work and is also used in industrial production. It is suitable for temporary and long-term fixation of various parts, structures, elements, and components.",
+    "applicationTitle": "Applications",
+    "applications": {
+      "1": "Fixation of various parts, structures, elements, and components.",
+      "2": "Sealing and insulation of joints, seams, and connections.",
+      "3": "Repair works in heating, ventilation, and water supply systems.",
+      "4": "Bonding and packaging in warehouse and transport logistics.",
+      "5": "Temporary fixation of parts during installation, repair, and gluing works.",
+      "6": "Used in automotive, woodworking, furniture, agricultural, defense, and other industries.",
+      "7": "Production of UAVs (unmanned aerial vehicles, drones).",
+      "8": "Protection of parts during polishing and grinding.",
+      "9": "Fixation of protective films, sheets, and floor coverings."
+    },
+    "advantagesTitle": "Advantages",
+    "advantages": {
+      "1": "Strong base with a thickness of 300 µm.",
+      "2": "Excellent adaptation to various surface textures and shapes.",
+      "3": "Resistance to sunlight, humidity, low and high temperatures.",
+      "4": "Excellent adhesion to aluminum, steel, wood, films, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass.",
+      "5": "Ultra-high resistance to longitudinal stretching.",
+      "6": "High holding strength against mechanical loads.",
+      "7": "Easy to use — can be torn across by hand."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Base material: synthetic fabric laminated with PE.",
+      "2": "Adhesive: synthetic rubber.",
+      "3": "Color: white.",
+      "4": "Thickness: 300 µm.",
+      "5": "Paper density: 95 g/m².",
+      "6": "Elongation: 16%.",
+      "7": "Adhesion: 14.2 N/cm.",
+      "8": "Temperature resistance: from -20 to +80°C.",
+      "9": "Size: 48 mm × 5 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "row": {
+        "article": "SRT485W",
+        "name": "SENSO reinforced repair tape",
+        "color": "White",
+        "size": "48 mm × 5 m",
+        "quantity": "12"
+      }
+    },
+    "parametersTitle": "Parameters",
+    "parameters": {
+      "1": {
+        "title": "Mechanical strength",
+        "description": "Holding force under load",
+        "value": "6"
+      },
+      "2": {
+        "title": "Resistance to adverse conditions",
+        "description": "UV radiation, humidity, temperature fluctuations",
+        "value": "5"
+      },
+      "3": {
+        "title": "Adhesion strength",
+        "description": "Aluminum, steel, wood, films, ceramics, textiles, rubber, plastics, glass, etc.",
+        "value": "6"
+      },
+      "4": {
+        "title": "Surface compatibility",
+        "description": "Smooth, porous, rough, uneven",
+        "value": "5"
+      },
+      "5": {
+        "title": "Clean removal",
+        "description": "Without adhesive residue",
+        "value": "4"
+      }
+    }
+  },
+  "ArmoredBlack": {
+    "title": "SENSO reinforced tape — black",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications",
+      "parameters": "Parameters"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "SENSO DUCT TAPE black is an ultra-strong adhesive reinforced tape made in Italy, designed for a wide range of repair and installation works. It consists of a double-layer composite material made of fabric laminated with polyethylene. The adhesive layer is based on synthetic rubber (hot melt) and provides high adhesion. With a thickness of 300 microns, the reinforced SENSO tape is highly resistant to longitudinal tearing while still being easy to tear across by hand for convenient use. The technical reinforced tape has excellent adhesion to aluminum, steel, wood, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass. It is ideal for repair and construction work and is also used in industrial production. It is suitable for temporary and long-term fixation of various parts, structures, elements, and components.",
+    "applicationTitle": "Applications",
+    "applications": {
+      "1": "Fixation of various parts, structures, elements, and components.",
+      "2": "Sealing and insulation of joints, seams, and connections.",
+      "3": "Repair works in heating, ventilation, and water supply systems.",
+      "4": "Bonding and packaging in warehouse and transport logistics.",
+      "5": "Temporary fixation of parts during installation, repair, and gluing works.",
+      "6": "Used in automotive, woodworking, furniture, agricultural, defense, and other industries.",
+      "7": "Production of UAVs (unmanned aerial vehicles, drones).",
+      "8": "Protection of parts during polishing and grinding.",
+      "9": "Fixation of protective films, sheets, and floor coverings."
+    },
+    "advantagesTitle": "Advantages",
+    "advantages": {
+      "1": "Strong base with a thickness of 300 µm.",
+      "2": "Excellent adaptation to various surface textures and shapes.",
+      "3": "Resistance to sunlight, humidity, low and high temperatures.",
+      "4": "Excellent adhesion to aluminum, steel, wood, films, ceramics, certain types of rubber, PVC, polycarbonate, fiberglass, ABS, textiles, and glass.",
+      "5": "Ultra-high resistance to longitudinal stretching.",
+      "6": "High holding strength against mechanical loads.",
+      "7": "Easy to use — can be torn across by hand."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Base material: synthetic fabric laminated with PE.",
+      "2": "Adhesive: synthetic rubber.",
+      "3": "Color: black.",
+      "4": "Thickness: 300 µm.",
+      "5": "Paper density: 95 g/m².",
+      "6": "Elongation: 16%.",
+      "7": "Adhesion: 14.2 N/cm.",
+      "8": "Temperature resistance: from -20 to +80°C.",
+      "9": "Size: 48 mm × 5 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "row": {
+        "article": "SRT485B",
+        "name": "SENSO reinforced repair tape",
+        "color": "Black",
+        "size": "48 mm × 5 m",
+        "quantity": "12"
+      }
+    },
+    "parametersTitle": "Parameters",
+    "parameters": {
+      "1": {
+        "title": "Mechanical strength",
+        "description": "Holding force under load",
+        "value": "6"
+      },
+      "2": {
+        "title": "Resistance to adverse conditions",
+        "description": "UV radiation, humidity, temperature fluctuations",
+        "value": "5"
+      },
+      "3": {
+        "title": "Adhesion strength",
+        "description": "Aluminum, steel, wood, films, ceramics, textiles, rubber, plastics, glass, etc.",
+        "value": "6"
+      },
+      "4": {
+        "title": "Surface compatibility",
+        "description": "Smooth, porous, rough, uneven",
+        "value": "5"
+      },
+      "5": {
+        "title": "Clean removal",
+        "description": "Without adhesive residue",
+        "value": "4"
+      }
+    }
+  },
+  "FixCrystal": {
+    "title": "FIX-CRYSTAL double-sided acrylic tape",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Professional transparent acrylic adhesive tape for 100% invisible mounting in automotive, exterior and interior applications. Ideal for glass and transparent elements where aesthetics matter.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Does not yellow when exposed to direct sunlight.",
+      "2": "Hydrophobic backing dampens vibrations and compensates for temperature fluctuations.",
+      "3": "Compatible with glass, acrylic glass, polycarbonate, lacquered plastic, transparent PVC and metal.",
+      "4": "Applications: mounting dash cams, holders, sensors and mirrors; deflectors; headlight components; POS materials and lightboxes."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Backing: foamed acrylic.",
+      "2": "Liner: transparent.",
+      "3": "Thickness: 1 mm.",
+      "4": "Temperature range: -30…+150°C.",
+      "5": "Sizes: 6 mm × 2 m; 9 mm × 2 m; 12 mm × 2 m; 15 mm × 2 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SCRY62",
+          "name": "FIX-CRYSTAL",
+          "color": "Transparent",
+          "size": "6 mm × 2 m",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "SCRY92",
+          "name": "FIX-CRYSTAL",
+          "color": "Transparent",
+          "size": "9 mm × 2 m",
+          "quantity": "—"
+        },
+        "3": {
+          "article": "SCRY122",
+          "name": "FIX-CRYSTAL",
+          "color": "Transparent",
+          "size": "12 mm × 2 m",
+          "quantity": "—"
+        },
+        "4": {
+          "article": "SCRY152",
+          "name": "FIX-CRYSTAL",
+          "color": "Transparent",
+          "size": "15 mm × 2 m",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "FixSteel": {
+    "title": "FIX-STEEL double-sided foam acrylic tape",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Heavy-duty double-sided adhesive tape for metal structures and professional body repair. Used as an alternative to welding and bolts for mounting moldings, deflectors, spoilers, profiles, cable ducts and heavy signs.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "The “steel monolith” color makes the bond visually part of the component.",
+      "2": "Resistant to gasoline, oils, antifreeze and high-pressure washing.",
+      "3": "Dampens up to 90% of vibration.",
+      "4": "Compatible with steel, aluminum, ABS, polycarbonate, composites, rigid plastics, painted metal and concrete."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Backing: foam acrylic.",
+      "2": "Liner: red.",
+      "3": "Thickness: 1 mm.",
+      "4": "Temperature range: -30…+170°C.",
+      "5": "Sizes: 9 mm × 2 m; 12 mm × 2 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "STEEL92",
+          "name": "FIX-STEEL",
+          "color": "—",
+          "size": "9 mm × 2 m",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "STEEL122",
+          "name": "FIX-STEEL",
+          "color": "—",
+          "size": "12 mm × 2 m",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "FixExtreme": {
+    "title": "FIX-EXTREME double-sided tape",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Reinforced double-sided tape for maximum-strength fixation and mounting of heavy components.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Highest adhesion level in the range.",
+      "2": "Ultra-strong mounting of heavy body-kit components.",
+      "3": "Resistant to temperature fluctuations.",
+      "4": "Compatible with ferrous metals, carbon fiber, rigid ABS plastic, fiberglass, composites and rough painted surfaces.",
+      "5": "Applications: spoilers, wings, wheel-arch extensions, sill covers, diffusers, antennas, mirror housings, brackets and advertising signs."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Backing: foamed acrylic.",
+      "2": "Liner: transparent.",
+      "3": "Thickness: 1.1 mm.",
+      "4": "Temperature range: -40…+170°C.",
+      "5": "Sizes: 9 mm × 2 m; 12 mm × 2 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "EXS92",
+          "name": "FIX-EXTREME",
+          "color": "—",
+          "size": "9 mm × 2 m",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "EXS122",
+          "name": "FIX-EXTREME",
+          "color": "—",
+          "size": "12 mm × 2 m",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "FixSlim": {
+    "title": "FIX-SLIM double-sided tape",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Ultra-thin double-sided adhesive tape for precise, neat mounting without a visible gap between surfaces.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Ultra-thin backing provides an almost invisible bond.",
+      "2": "Suitable for precise mounting of thin and decorative elements.",
+      "3": "Provides neat bonding without unnecessary thickness.",
+      "4": "Convenient for use on smooth surfaces.",
+      "5": "Used for mounting decorative elements, plates, badges, interior components and other lightweight parts."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Backing: polypropylene film.",
+      "2": "Liner: mustard yellow.",
+      "3": "Thickness: 0.1 mm.",
+      "4": "Temperature range: -10…+80°C.",
+      "5": "Sizes: 12 mm × 5 m; 19 mm × 5 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SLIM125",
+          "name": "FIX-SLIM",
+          "color": "—",
+          "size": "12 mm × 5 m",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "SLIM195",
+          "name": "FIX-SLIM",
+          "color": "—",
+          "size": "19 mm × 5 m",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "FixInterior": {
+    "title": "FIX-INTERIOR double-sided foam tape",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Soft double-sided foam adhesive tape for automotive interiors and indoor applications. Compensates for uneven surfaces, dampens micro-vibrations and eliminates squeaks.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "100% moisture resistant.",
+      "2": "Compensates for uneven textured plastic and dampens micro-vibrations.",
+      "3": "Applications: dashboard elements, cable management, LED lighting, interior trim, organizers; mirrors, hooks, skirting boards and cable ducts.",
+      "4": "Compatible with textured plastic, painted metal, wood, MDF, ceramic tile and glass."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Backing: polyethylene foam.",
+      "2": "Liner: red.",
+      "3": "Thickness: 1 mm.",
+      "4": "Temperature range: -20…+90°C.",
+      "5": "Moisture resistance: 100%.",
+      "6": "Size: 12 mm × 2 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SIN122",
+          "name": "FIX-INTERIOR",
+          "color": "—",
+          "size": "12 mm × 2 m",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "FixCraft": {
+    "title": "FIX-CRAFT double-sided non-woven tape",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Professional thin double-sided tape for reliable fixation of parts in areas exposed to elevated temperatures. Flexible and convenient for complex-shaped components.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Withstands heating up to +200°C without loss of properties.",
+      "2": "Flexible fabric backing; easy to tear across by hand.",
+      "3": "Applications: thermal and sound insulation, interior trim, seals, LED lighting, dashboard parts; household appliances, electrical devices, décor, leather, fabrics, cardboard, wood and plastic.",
+      "4": "Ultra-high initial adhesion."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Backing: non-woven fabric.",
+      "2": "Liner: white.",
+      "3": "Thickness: 0.13 mm.",
+      "4": "Temperature range: -20…+200°C.",
+      "5": "Sizes: 12 mm × 10 m; 19 mm × 10 m."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Size",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "THERS1210",
+          "name": "FIX-CRAFT",
+          "color": "—",
+          "size": "12 mm × 10 m",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "THERS1910",
+          "name": "FIX-CRAFT",
+          "color": "—",
+          "size": "19 mm × 10 m",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "SerieTecnico": {
+    "title": "SENSO SERIE TECNICO multipurpose lubricant",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Instant loosening, moisture displacement, cleaning, lubrication and protection of metal against corrosion.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Penetrates seized threads and breaks down rust structure.",
+      "2": "Displaces moisture from microcracks in insulation and terminals.",
+      "3": "Removes carbon deposits, old grease, bitumen stains and adhesive/tape residue.",
+      "4": "Leaves an inhibitor film for long-term protection against oxidation.",
+      "5": "Applications: automotive and motorcycle service, tools and workshop, garden and household, construction and everyday use."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Formats: 520 ml, 270 ml, 210 ml."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Format",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "OS520U",
+          "name": "SENSO SERIE TECNICO",
+          "color": "—",
+          "size": "520 ml",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "OS270U",
+          "name": "SENSO SERIE TECNICO",
+          "color": "—",
+          "size": "270 ml",
+          "quantity": "—"
+        },
+        "3": {
+          "article": "OS210U",
+          "name": "SENSO SERIE TECNICO",
+          "color": "—",
+          "size": "210 ml",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "OlioDiSilicone": {
+    "title": "OLIO DI SILICONE silicone spray",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Restores elasticity, provides water repellency and reduces friction. Designed for the care of rubber, plastic, seals and mechanisms.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Creates a polymer protective layer and eliminates squeaks in plastic and rubber.",
+      "2": "Restores softness to rubber and helps prevent cracking in sunlight.",
+      "3": "Repels water by creating a hydrophobic barrier.",
+      "4": "Has dielectric properties and protects high-voltage wires.",
+      "5": "Applications: detailing, door and window seals, textiles and footwear, sports equipment and furniture mechanisms."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Formats: 520 ml, 270 ml, 210 ml."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Format",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "OS520",
+          "name": "OLIO DI SILICONE",
+          "color": "—",
+          "size": "520 ml",
+          "quantity": "—"
+        },
+        "2": {
+          "article": "OS270",
+          "name": "OLIO DI SILICONE",
+          "color": "—",
+          "size": "270 ml",
+          "quantity": "—"
+        },
+        "3": {
+          "article": "OS210",
+          "name": "OLIO DI SILICONE",
+          "color": "—",
+          "size": "210 ml",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "SteelGray": {
+    "title": "STEEL GRAY cold weld — gray",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Epoxy filler adhesive for repairing and restoring parts. Creates an ultra-strong bond resistant to vibration, impact loads, water, oils and chemical agents.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "SOLID BOND: ultra-strong joint resistant to vibration and impact.",
+      "2": "ZERO SHRINK: no shrinkage; retains its shape and 100% of its volume after curing.",
+      "3": "STOP-LEAK: works under pressure and in wet environments, stopping leaks.",
+      "4": "POST-TECH: after curing, it can be drilled, sanded, threaded and painted.",
+      "5": "CHEM-LOCK: resistant to gasoline, oils, antifreeze and road chemicals."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Color: gray.",
+      "2": "Weight: 25 g.",
+      "3": "Temperature range: -30…+260°C.",
+      "4": "Curing: about 2 hours."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Weight",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SEGP-G25",
+          "name": "STEEL GRAY",
+          "color": "Gray",
+          "size": "25 g",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "StoneBeige": {
+    "title": "STONE BEIGE cold weld — beige",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Epoxy filler adhesive for repairing and restoring parts, especially ceramics, plumbing fixtures, household and decorative items. Creates an ultra-strong, shrink-free bond.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Ultra-strong, impact- and vibration-resistant bond.",
+      "2": "No shrinkage — retains the required shape and volume.",
+      "3": "Works under pressure and in wet environments.",
+      "4": "After curing, it can be drilled, sanded, threaded and painted.",
+      "5": "Resistant to water, oils, chemicals and temperature fluctuations."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Color: beige.",
+      "2": "Weight: 25 g.",
+      "3": "Temperature range: -30…+260°C.",
+      "4": "Curing: about 2 hours."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Weight",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SEGP-BIE25",
+          "name": "STONE BEIGE",
+          "color": "Beige",
+          "size": "25 g",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "TotalBlack": {
+    "title": "TOTAL BLACK cold weld — black",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Epoxy filler adhesive for strong repair and restoration of parts. Suitable for automotive repairs, household use, plumbing, tools and mechanical assemblies.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "SOLID BOND: ultra-strong joint resistant to vibration and impact loads.",
+      "2": "ZERO SHRINK: no shrinkage.",
+      "3": "STOP-LEAK: sealing and leak repair.",
+      "4": "POST-TECH: after curing, it can be drilled, sanded, threaded and painted.",
+      "5": "CHEM-LOCK: resistant to gasoline, oils, antifreeze and road chemicals."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Color: black.",
+      "2": "Weight: 25 g.",
+      "3": "Temperature range: -30…+260°C.",
+      "4": "Curing: about 2 hours."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Weight",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SEGP-B25",
+          "name": "TOTAL BLACK",
+          "color": "Black",
+          "size": "25 g",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "EpoxyGray": {
+    "title": "Two-component gray epoxy adhesive",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Industrial two-component filler adhesive with a “steel seam” effect for repairing and restoring metal and various other parts. Suitable for automotive repair, home use and professional service.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Liquid metal effect.",
+      "2": "Ultra-strong bond up to 260 kg/cm².",
+      "3": "Fast curing — initial set in about 5 minutes.",
+      "4": "Extreme temperature resistance.",
+      "5": "The cured joint can be drilled, sanded, threaded and painted.",
+      "6": "Compatible with metal, ceramics, wood, glass, plastic and stone."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Color: gray.",
+      "2": "Volume: 30 g.",
+      "3": "Temperature range: -30…+260°C.",
+      "4": "Initial set: about 5 minutes.",
+      "5": "Full strength: after 24 hours."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Volume",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SEGS-ST30",
+          "name": "Two-component gray epoxy",
+          "color": "Gray",
+          "size": "30 g",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "EpoxyClear": {
+    "title": "Two-component transparent epoxy adhesive",
+    "tabs": {
+      "purpose": "Purpose",
+      "characteristics": "Specifications"
+    },
+    "purposeTitle": "Purpose",
+    "purposeText": "Reliable two-component adhesive for repair and bonding. Creates a transparent joint and is suitable for most materials in automotive, household and repair applications.",
+    "advantagesTitle": "Features and applications",
+    "advantages": {
+      "1": "Crystal-clear, nearly invisible joint.",
+      "2": "Ultra-strong bond up to 260 kg/cm².",
+      "3": "Fast curing — initial set in about 5 minutes.",
+      "4": "Full strength after 24 hours.",
+      "5": "Compatible with metal, ceramics, wood, glass, plastic and stone.",
+      "6": "Applications: bumper cracks, headlight housings, mirrors, moldings, radiators, fuel tanks, plumbing, ceramics, glass, furniture, household appliances and garden tools."
+    },
+    "characteristicsTitle": "Specifications",
+    "characteristics": {
+      "1": "Color: transparent.",
+      "2": "Volume: 30 g.",
+      "3": "Temperature range: -30…+260°C.",
+      "4": "Initial set: about 5 minutes.",
+      "5": "Full strength: after 24 hours."
+    },
+    "table": {
+      "article": "Article",
+      "name": "Name",
+      "color": "Color",
+      "size": "Volume",
+      "quantity": "Per box, pcs.",
+      "rows": {
+        "1": {
+          "article": "SEGS-CL30",
+          "name": "Two-component transparent epoxy",
+          "color": "Transparent",
+          "size": "30 g",
+          "quantity": "—"
+        }
+      }
+    }
+  },
+  "Glue": {
+    "title": "Adhesives",
+    "products": {
+      "steelGray": {
+        "type": "Cold weld",
+        "title": "STEEL GRAY",
+        "color": "Gray",
+        "weight": "25 g",
+        "temperature": "-30…+260°C"
+      },
+      "stoneBeige": {
+        "type": "Cold weld",
+        "title": "STONE BEIGE",
+        "color": "Beige",
+        "weight": "25 g",
+        "temperature": "-30…+260°C"
+      },
+      "totalBlack": {
+        "type": "Cold weld",
+        "title": "TOTAL BLACK",
+        "color": "Black",
+        "weight": "25 g",
+        "temperature": "-30…+260°C"
+      },
+      "epoxyGray": {
+        "type": "Two-component epoxy adhesive",
+        "title": "Two-component gray",
+        "color": "Gray",
+        "weight": "30 g",
+        "temperature": "-30…+260°C"
+      },
+      "epoxyClear": {
+        "type": "Two-component epoxy adhesive",
+        "title": "Two-component transparent",
+        "color": "Transparent",
+        "weight": "30 g",
+        "temperature": "-30…+260°C"
+      }
+    }
+  },
+  "AerosolsLubricants": {
+    "title": "Aerosols & Lubricants",
+    "products": {
+      "serieTecnico": {
+        "type": "Multipurpose lubricant",
+        "title": "SENSO SERIE TECNICO",
+        "formats": "520 ml · 270 ml · 210 ml"
+      },
+      "olioSilicone": {
+        "type": "Silicone",
+        "title": "OLIO DI SILICONE",
+        "formats": "520 ml · 270 ml · 210 ml"
+      }
+    }
+  },
+  "Breadcrumbs": {
+    "products": "Products",
+    "paintingTapes": "Masking Tapes",
+    "reinforcedTapes": "Reinforced Tapes",
+    "doubleSidedTapes": "Double-Sided Tapes",
+    "aerosolsLubricants": "Aerosols & Lubricants",
+    "glue": "Adhesives"
+  },
+  "reinforcedTapes": {
+    "title": "Reinforced Tapes"
+  },
+  "DoubleSidedTapes": {
+    "title": "Double-Sided Tapes"
   }
 }

@@ -5,23 +5,15 @@ import Footer from '@/components/common/Footer';
 import Breadcrumbs from '@/components/common/Breadcrumbs';
 import { useTranslations } from 'next-intl';
 
-export default function ArmoredGreyPage() {
-  const t = useTranslations('ArmoredGrey');
+export default function SteelGrayPage() {
+  const t = useTranslations('SteelGray');
   const b = useTranslations('Breadcrumbs');
 
-  const applications = Array.from({ length: 9 }, (_, index) => t(`applications.${index + 1}`));
+  const advantages = Array.from({ length: 5 }, (_, index) => t(`advantages.${index + 1}`));
 
-  const advantages = Array.from({ length: 7 }, (_, index) => t(`advantages.${index + 1}`));
-
-  const characteristics = Array.from({ length: 9 }, (_, index) =>
+  const characteristics = Array.from({ length: 4 }, (_, index) =>
     t(`characteristics.${index + 1}`)
   );
-
-  const parameters = Array.from({ length: 5 }, (_, index) => ({
-    title: t(`parameters.${index + 1}.title`),
-    description: t(`parameters.${index + 1}.description`),
-    value: Number(t(`parameters.${index + 1}.value`)),
-  }));
 
   return (
     <>
@@ -35,32 +27,27 @@ export default function ArmoredGreyPage() {
               href: '/products',
             },
             {
-              label: b('reinforcedTapes'),
-              href: '/reinforced-tapes',
+              label: b('glue'),
+              href: '/adhesives',
             },
             {
-              label: 'SENSO GREY',
+              label: t('title'),
             },
           ]}
         />
 
         <ProductDetail
           title={t('title')}
-          images={['/images/5.1.webp']}
+          images={['/images/1.1.webp']}
           purposeTitle={t('purposeTitle')}
           purposeText={t('purposeText')}
-          applicationTitle={t('applicationTitle')}
-          applications={applications}
           advantagesTitle={t('advantagesTitle')}
           advantages={advantages}
           characteristicsTitle={t('characteristicsTitle')}
           characteristics={characteristics}
-          parametersTitle={t('parametersTitle')}
-          parameters={parameters}
           tabs={{
             purpose: t('tabs.purpose'),
             characteristics: t('tabs.characteristics'),
-            parameters: t('tabs.parameters'),
           }}
           tableLabels={{
             article: t('table.article'),
@@ -71,11 +58,11 @@ export default function ArmoredGreyPage() {
           }}
           table={[
             {
-              article: t('table.row.article'),
-              name: t('table.row.name'),
-              color: t('table.row.color'),
-              size: t('table.row.size'),
-              quantity: t('table.row.quantity'),
+              article: t('table.rows.1.article'),
+              name: t('table.rows.1.name'),
+              color: t('table.rows.1.color'),
+              size: t('table.rows.1.size'),
+              quantity: t('table.rows.1.quantity'),
             },
           ]}
         />

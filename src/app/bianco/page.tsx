@@ -2,6 +2,7 @@ import Header from '@/components/common/Header';
 import Bianco from '../../components/common/Bianco';
 import Footer from '@/components/common/Footer';
 import ContactForm from '../../components/common/ContactForm';
+import Breadcrumbs from '@/components/common/Breadcrumbs';
 import { getMessages } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import type { Metadata } from 'next';
@@ -38,6 +39,7 @@ export async function generateMetadata({
 
 export default function Products({ params }: { params: { locale: string } }) {
   const t = useTranslations('Products');
+  const b = useTranslations('Breadcrumbs');
 
   return (
     <>
@@ -45,6 +47,23 @@ export default function Products({ params }: { params: { locale: string } }) {
 
       <div className="container mx-auto px-4 md:px-8">
         <Header />
+
+        <Breadcrumbs
+          items={[
+            {
+              label: b('products'),
+              href: '/products',
+            },
+            {
+              label: b('paintingTapes'),
+              href: '/painting-tapes',
+            },
+            {
+              label: 'SENSO BIANCO',
+            },
+          ]}
+        />
+
         <Bianco />
       </div>
 

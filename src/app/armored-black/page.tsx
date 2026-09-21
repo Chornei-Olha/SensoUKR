@@ -5,8 +5,8 @@ import Footer from '@/components/common/Footer';
 import Breadcrumbs from '@/components/common/Breadcrumbs';
 import { useTranslations } from 'next-intl';
 
-export default function ArmoredGreyPage() {
-  const t = useTranslations('ArmoredGrey');
+export default function ArmoredBlackPage() {
+  const t = useTranslations('ArmoredBlack');
   const b = useTranslations('Breadcrumbs');
 
   const applications = Array.from({ length: 9 }, (_, index) => t(`applications.${index + 1}`));
@@ -39,7 +39,7 @@ export default function ArmoredGreyPage() {
               href: '/reinforced-tapes',
             },
             {
-              label: 'SENSO GREY',
+              label: 'SENSO BLACK',
             },
           ]}
         />

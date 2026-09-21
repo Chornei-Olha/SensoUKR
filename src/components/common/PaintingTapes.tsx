@@ -33,7 +33,7 @@ const products = [
   },
 ];
 
-export default function ProductsPage() {
+export default function PaintingTapes() {
   const t = useTranslations();
 
   return (
@@ -71,8 +71,8 @@ export default function ProductsPage() {
                     </h2>
 
                     <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-1 font-montserrat text-sm sm:text-base text-gray-600">
-                      {characteristics.map((item) => (
-                        <p key={item}>{item}</p>
+                      {characteristics.map((item, index) => (
+                        <p key={index}>{item}</p>
                       ))}
                     </div>
                   </div>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const products = [
   {
@@ -41,12 +42,13 @@ const products = [
 ];
 
 export default function DoubleSidedTapes() {
+  const t = useTranslations('DoubleSidedTapes');
+
   return (
     <section className="bg-[#F3F4F6]">
       <div className="container mx-auto px-4 md:px-8 py-10 md:py-16">
-        {/* Заголовок позже подключим через ua.json / en.json */}
         <h1 className="text-3xl md:text-4xl font-bold font-montserrat text-gray-900 leading-snug mb-10">
-          SENSO
+          {t('title')}
         </h1>
 
         <div className="w-full border-t border-gray-200">

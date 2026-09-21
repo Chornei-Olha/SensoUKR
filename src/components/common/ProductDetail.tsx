@@ -38,7 +38,7 @@ type ProductDetailProps = {
   characteristicsTitle: string;
   characteristics: string[];
 
-  parametersTitle: string;
+  parametersTitle?: string;
   parameters?: ProductParameter[];
 
   table?: ProductTableRow[];
@@ -54,7 +54,7 @@ type ProductDetailProps = {
   tabs: {
     purpose: string;
     characteristics: string;
-    parameters: string;
+    parameters?: string;
   };
 };
 
@@ -136,17 +136,19 @@ export default function ProductDetail({
               {tabs.characteristics}
             </button>
 
-            <button
-              type="button"
-              onClick={() => setActiveTab('parameters')}
-              className={`px-4 py-3 font-montserrat text-sm md:text-base font-semibold transition-colors ${
-                activeTab === 'parameters'
-                  ? 'text-red-600 border-b-2 border-red-600'
-                  : 'text-gray-500 hover:text-gray-900'
-              }`}
-            >
-              {tabs.parameters}
-            </button>
+            {parameters.length > 0 && tabs.parameters && (
+              <button
+                type="button"
+                onClick={() => setActiveTab('parameters')}
+                className={`px-4 py-3 font-montserrat text-sm md:text-base font-semibold transition-colors ${
+                  activeTab === 'parameters'
+                    ? 'text-red-600 border-b-2 border-red-600'
+                    : 'text-gray-500 hover:text-gray-900'
+                }`}
+              >
+                {tabs.parameters}
+              </button>
+            )}
           </div>
 
           {/* ПРИЗНАЧЕННЯ */}
@@ -209,26 +211,34 @@ export default function ProductDetail({
               </ul>
 
               {table.length > 0 && tableLabels && (
-                <div className="mt-8 overflow-x-auto">
-                  <table className="w-full min-w-[700px] border-collapse text-sm">
+                <div className="mt-8 w-full">
+                  <table className="w-full table-fixed border-collapse text-sm">
                     <thead>
                       <tr className="border-b border-gray-300 text-left">
-                        <th className="py-3 px-3">{tableLabels.article}</th>
-                        <th className="py-3 px-3">{tableLabels.name}</th>
-                        <th className="py-3 px-3">{tableLabels.color}</th>
-                        <th className="py-3 px-3">{tableLabels.size}</th>
-                        <th className="py-3 px-3">{tableLabels.quantity}</th>
+                        <th className="w-[16%] py-3 px-2">{tableLabels.article}</th>
+
+                        <th className="w-[42%] py-3 px-2">{tableLabels.name}</th>
+
+                        <th className="w-[14%] py-3 px-2">{tableLabels.color}</th>
+
+                        <th className="w-[18%] py-3 px-2">{tableLabels.size}</th>
+
+                        <th className="w-[10%] py-3 px-2 text-center">{tableLabels.quantity}</th>
                       </tr>
                     </thead>
 
                     <tbody>
                       {table.map((row, index) => (
                         <tr key={`${row.article}-${index}`} className="border-b border-gray-200">
-                          <td className="py-3 px-3">{row.article}</td>
-                          <td className="py-3 px-3">{row.name}</td>
-                          <td className="py-3 px-3">{row.color}</td>
-                          <td className="py-3 px-3">{row.size}</td>
-                          <td className="py-3 px-3">{row.quantity}</td>
+                          <td className="py-3 px-2 break-words">{row.article}</td>
+
+                          <td className="py-3 px-2 break-words">{row.name}</td>
+
+                          <td className="py-3 px-2 break-words">{row.color}</td>
+
+                          <td className="py-3 px-2 break-words">{row.size}</td>
+
+                          <td className="py-3 px-2 text-center">{row.quantity}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -239,7 +249,7 @@ export default function ProductDetail({
           )}
 
           {/* ПАРАМЕТРИ */}
-          {activeTab === 'parameters' && (
+          {activeTab === 'parameters' && parameters.length > 0 && (
             <div className="font-montserrat">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
                 {parametersTitle}
