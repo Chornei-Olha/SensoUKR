@@ -41,7 +41,7 @@ export default function ReinforcedTapes() {
               className="group block border-b border-gray-200 transition-all duration-300 hover:bg-gray-50 hover:shadow-sm"
             >
               <div className="flex items-center gap-5 sm:gap-8 py-6 px-2 sm:px-4">
-                <div className="relative w-[110px] sm:w-[150px] aspect-[4/5] shrink-0 overflow-hidden rounded-lg bg-gray-100">
+                <div className="relative w-[165px] sm:w-[225px] aspect-[3/2] shrink-0 overflow-hidden rounded-lg bg-gray-100">
                   {' '}
                   <Image
                     src={product.image}
