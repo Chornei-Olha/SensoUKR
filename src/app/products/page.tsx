@@ -1,7 +1,7 @@
 import Header from '@/components/common/Header';
 import Products from '@/components/common/Products';
 import Footer from '@/components/common/Footer';
-import ContactForm from '../../components/common/ContactForm';
+import ContactForm from '@/components/common/ContactForm';
 import { getMessages } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import type { Metadata } from 'next';
@@ -36,7 +36,7 @@ export async function generateMetadata({
   };
 }
 
-export default function PartnersPage({ params }: { params: { locale: string } }) {
+export default function ProductsPage({ params }: { params: { locale: string } }) {
   const t = useTranslations('Cooperation');
 
   return (

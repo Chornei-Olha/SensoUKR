@@ -17,14 +17,17 @@ export default function Header() {
   const toggleLang = () => {
     setLang((prev) => (prev === 'UA' ? 'IT' : 'UA'));
   };
+
   const router = useRouter();
   const pathname = usePathname();
   const [locale, setLocale] = useState<string>('');
+
   useEffect(() => {
     const cookieLocale = document.cookie
       .split('; ')
       .find((row) => row.startsWith('MYNEXTAPP_LOCALE='))
       ?.split('=')[1];
+
     if (cookieLocale) {
       setLocale(cookieLocale);
     } else {
@@ -40,11 +43,12 @@ export default function Header() {
     router.refresh();
   };
 
-  // хелпер для стилей активной ссылки
+  // Хелпер для стилей активной ссылки
   const linkClass = (href: string) =>
     `px-3 py-1 rounded-full transition-colors ${
       pathname === href ? 'bg-red-600 text-white' : 'hover:text-red-600'
     }`;
+
   const t = useTranslations('Header');
 
   useEffect(() => {
@@ -75,55 +79,78 @@ export default function Header() {
         {/* Десктоп меню по центру */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium font-montserrat text-gray-700 mx-auto relative">
           <Link href="/" className={linkClass('/')}>
-            {t('menu1')}{' '}
+            {t('menu1')}
           </Link>
 
-          {/* Выпадающее меню Продукція */}
-          {/* <div
+          {/* Продукція: ссылка + выпадающее меню */}
+          <div
             className="relative"
             onMouseEnter={() => setProductOpen(true)}
             onMouseLeave={() => setProductOpen(false)}
           >
-            <button className="flex items-center space-x-1 hover:text-red-600">
-              <span> {t('menu2')} </span>
+            <Link
+              href="/products"
+              className={`${linkClass('/products')} flex items-center space-x-1`}
+            >
+              <span>{t('menu2')}</span>
+
               <ChevronDown
                 size={16}
-                className={`transition-transform ${productOpen ? 'rotate-180' : 'rotate-0'}`}
+                className={`transition-transform duration-200 ${
+                  productOpen ? 'rotate-180' : 'rotate-0'
+                }`}
               />
-            </button>
+            </Link>
 
             <AnimatePresence>
               {productOpen && (
                 <motion.div
-                  initial={{ opacity: 0, y: -10 }}
+                  initial={{ opacity: 0, y: -8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.2, ease: 'easeOut' }}
-                  className="absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50 overflow-hidden"
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.18, ease: 'easeOut' }}
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[300px] z-50"
                 >
-                  <Link href="/bianco" className="block px-4 py-2 hover:bg-red-100">
-                    {t('tapes1')}{' '}
-                  </Link>
-                  <Link href="/marrone" className="block px-4 py-2 hover:bg-red-100">
-                    {t('tapes2')}{' '}
-                  </Link>
-                  <Link href="/rossa" className="block px-4 py-2 hover:bg-red-100">
-                    {t('tapes3')}{' '}
-                  </Link>
+                  <div className="bg-white rounded-xl shadow-[0_15px_45px_rgba(0,0,0,0.12)] border border-gray-100 p-2">
+                    {[
+                      {
+                        href: '/painting-tapes',
+                        label: t('products1'),
+                      },
+                      {
+                        href: '/reinforced-tapes',
+                        label: t('products2'),
+                      },
+                      {
+                        href: '/double-sided-tapes',
+                        label: t('products3'),
+                      },
+                      {
+                        href: '/aerosols-lubricants',
+                        label: t('products4'),
+                      },
+                      {
+                        href: '/adhesives',
+                        label: t('products5'),
+                      },
+                    ].map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="group/item flex items-center justify-between gap-4 rounded-lg px-4 py-3 font-montserrat text-[14px] font-medium text-gray-800 transition-all duration-200 hover:bg-red-50 hover:text-red-600"
+                      >
+                        <span>{item.label}</span>
 
-                  <Link href="/oro" className="block px-4 py-2 hover:bg-red-100">
-                    {t('tapes4')}{' '}
-                  </Link>
-                  <Link href="/armored" className="block px-4 py-2 hover:bg-red-100">
-                    {t('tapes5')}{' '}
-                  </Link>
+                        <span className="text-lg text-gray-300 transition-all duration-200 group-hover/item:text-red-600 group-hover/item:translate-x-1">
+                          →
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div> */}
-          <Link href="/products" className={`${linkClass('/products')} cursor-pointer`}>
-            {t('menu2')}
-          </Link>
+          </div>
 
           {/* Выпадающее меню Співпраця */}
           <div
@@ -132,7 +159,8 @@ export default function Header() {
             onMouseLeave={() => setCollabOpen(false)}
           >
             <button className="flex items-center space-x-1 hover:text-red-600">
-              <span> {t('menu3')} </span>
+              <span>{t('menu3')}</span>
+
               <ChevronDown
                 size={16}
                 className={`transition-transform ${collabOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -149,16 +177,15 @@ export default function Header() {
                   className="absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-50 overflow-hidden"
                 >
                   <Link href="/industry" className="block px-4 py-2 hover:bg-red-100">
-                    {' '}
-                    {t('menu3-1')}{' '}
-                  </Link>{' '}
+                    {t('menu3-1')}
+                  </Link>
+
                   <Link href="/dealers" className="block px-4 py-2 hover:bg-red-100">
-                    {' '}
-                    {t('menu3-2')}{' '}
-                  </Link>{' '}
+                    {t('menu3-2')}
+                  </Link>
+
                   <Link href="/retail" className="block px-4 py-2 hover:bg-red-100">
-                    {' '}
-                    {t('menu3-3')}{' '}
+                    {t('menu3-3')}
                   </Link>
                 </motion.div>
               )}
@@ -166,14 +193,21 @@ export default function Header() {
           </div>
 
           <Link href="/contacts" className={linkClass('#footer')}>
-            {t('menu4')}{' '}
+            {t('menu4')}
           </Link>
         </nav>
 
+        {/* Соцсети слева */}
         <div className="absolute left-[25px] top-1/2 transform -translate-y-1/2 hidden md:flex flex-col items-center gap-[46px] bg-black/10 rounded-[36px] px-[15px] py-[25px] z-20">
           {[
-            { text: 'YOUTUBE', href: 'https://www.youtube.com/' },
-            { text: 'INSTAGRAM', href: 'https://www.instagram.com/senso_tm_ua/' },
+            {
+              text: 'YOUTUBE',
+              href: 'https://www.youtube.com/',
+            },
+            {
+              text: 'INSTAGRAM',
+              href: 'https://www.instagram.com/senso_tm_ua/',
+            },
           ].map(({ text, href }, idx) => (
             <a
               key={idx}
@@ -192,13 +226,18 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-3">
           <button
             onClick={() => changeLocale('ua')}
-            className={`border p-2 font-medium font-inter rounded-md text-sm ${locale === 'ua' && 'bg-red-500 text-white'}`}
+            className={`border p-2 font-medium font-inter rounded-md text-sm ${
+              locale === 'ua' && 'bg-red-500 text-white'
+            }`}
           >
             UA
           </button>
+
           <button
             onClick={() => changeLocale('en')}
-            className={`border p-2 font-medium font-inter rounded-md text-sm ${locale === 'en' && 'bg-red-500 text-white'}`}
+            className={`border p-2 font-medium font-inter rounded-md text-sm ${
+              locale === 'en' && 'bg-red-500 text-white'
+            }`}
           >
             EN
           </button>
@@ -221,71 +260,103 @@ export default function Header() {
               className={`${linkClass('/')} flex justify-center items-center w-full`}
               onClick={() => setIsOpen(false)}
             >
-              {' '}
-              {t('menu1')}{' '}
+              {t('menu1')}
             </Link>
 
-            {/* <div>
-              <button
-                className="w-full flex justify-left items-center gap-2 hover:bg-gray-100 rounded"
-                onClick={() => setProductOpen(!productOpen)}
+            {/* Продукція — мобильная версия */}
+            <div className="w-full">
+              <div
+                className={`flex justify-center items-center ${
+                  pathname === '/products' ? 'bg-red-600 text-white rounded-full' : ''
+                }`}
               >
-                <span> {t('menu2')} </span>
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform ${productOpen ? 'rotate-180' : 'rotate-0'}`}
-                />
-              </button>
+                {/* Сам текст ведет на страницу Продукція */}
+                <Link href="/products" className="py-2 pl-4" onClick={() => setIsOpen(false)}>
+                  {t('menu2')}
+                </Link>
+
+                {/* Стрелка отдельно раскрывает подменю */}
+                <button
+                  type="button"
+                  onClick={() => setProductOpen(!productOpen)}
+                  className="py-2 pl-2 pr-4"
+                  aria-label="Toggle products submenu"
+                >
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform ${productOpen ? 'rotate-180' : 'rotate-0'}`}
+                  />
+                </button>
+              </div>
+
               {productOpen && (
-                <div className="flex flex-col pl-4 mt-3 space-y-3">
-                  <Link href="/bianco" onClick={() => setIsOpen(false)}>
-                    {t('tapes1')}{' '}
-                  </Link>
-                  <Link href="/marrone" onClick={() => setIsOpen(false)}>
-                    {t('tapes2')}{' '}
-                  </Link>
-                  <Link href="/rossa" onClick={() => setIsOpen(false)}>
-                    {t('tapes3')}{' '}
-                  </Link>
-                  <Link href="/oro" onClick={() => setIsOpen(false)}>
-                    {t('tapes4')}{' '}
-                  </Link>
-                  <Link href="/armored" onClick={() => setIsOpen(false)}>
-                    {t('tapes5')}{' '}
-                  </Link>
+                <div className="mt-3 px-4">
+                  <div className="overflow-hidden rounded-xl border border-gray-100 bg-gray-50">
+                    {[
+                      {
+                        href: '/painting-tapes',
+                        label: t('products1'),
+                      },
+                      {
+                        href: '/reinforced-tapes',
+                        label: t('products2'),
+                      },
+                      {
+                        href: '/double-sided-tapes',
+                        label: t('products3'),
+                      },
+                      {
+                        href: '/aerosols-lubricants',
+                        label: t('products4'),
+                      },
+                      {
+                        href: '/adhesives',
+                        label: t('products5'),
+                      },
+                    ].map((item, index) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setIsOpen(false)}
+                        className={`flex items-center justify-between px-5 py-4 font-montserrat text-sm font-medium text-gray-800 transition-colors hover:bg-red-50 hover:text-red-600 ${
+                          index !== 4 ? 'border-b border-gray-200' : ''
+                        }`}
+                      >
+                        <span>{item.label}</span>
+                        <span className="text-red-600">→</span>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
-            </div> */}
-            <Link
-              href="/products"
-              className="w-full flex justify-center items-center py-2 cursor-pointer"
-              onClick={() => setIsOpen(false)}
-            >
-              {t('menu2')}
-            </Link>
+            </div>
 
-            {/* Мобильное выпадающее меню */}
+            {/* Мобильное выпадающее меню Співпраця */}
             <div>
               <button
                 className="w-full flex justify-left items-center gap-2 hover:bg-gray-100 rounded"
                 onClick={() => setCollabOpen(!collabOpen)}
               >
-                <span> {t('menu3')} </span>
+                <span>{t('menu3')}</span>
+
                 <ChevronDown
                   size={16}
                   className={`transition-transform ${collabOpen ? 'rotate-180' : 'rotate-0'}`}
                 />
               </button>
+
               {collabOpen && (
                 <div className="flex flex-col pl-4 mt-3 space-y-3">
                   <Link href="/industry" onClick={() => setIsOpen(false)}>
-                    {t('menu3-1')}{' '}
+                    {t('menu3-1')}
                   </Link>
+
                   <Link href="/dealers" onClick={() => setIsOpen(false)}>
-                    {t('menu3-2')}{' '}
+                    {t('menu3-2')}
                   </Link>
+
                   <Link href="/retail" onClick={() => setIsOpen(false)}>
-                    {t('menu3-3')}{' '}
+                    {t('menu3-3')}
                   </Link>
                 </div>
               )}
@@ -303,22 +374,29 @@ export default function Header() {
             <div className="flex justify-center gap-3 pt-[100px]">
               <button
                 onClick={() => changeLocale('ua')}
-                className={`border px-5 py-2 font-bold rounded-md text-sm ${locale === 'ua' && 'bg-red-500 text-white'}`}
+                className={`border px-5 py-2 font-bold rounded-md text-sm ${
+                  locale === 'ua' && 'bg-red-500 text-white'
+                }`}
               >
                 UA
               </button>
+
               <button
                 onClick={() => changeLocale('en')}
-                className={`border px-5 py-2 font-bold rounded-md text-sm ${locale === 'en' && 'bg-red-500 text-white'}`}
+                className={`border px-5 py-2 font-bold rounded-md text-sm ${
+                  locale === 'en' && 'bg-red-500 text-white'
+                }`}
               >
                 EN
               </button>
             </div>
+
             {/* Соцсети внизу */}
             <div className="mt-auto border-t pt-6 flex justify-center gap-6">
               <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                 <Image src="/images/youtube.png" alt="Youtube" width={24} height={24} />
               </a>
+
               <a
                 href="https://www.instagram.com/senso_tm_ua/"
                 target="_blank"
@@ -327,7 +405,7 @@ export default function Header() {
                 <Image src="/images/instagram.png" alt="Instagram" width={24} height={24} />
               </a>
             </div>
-          </div>{' '}
+          </div>
         </nav>
       )}
     </header>
