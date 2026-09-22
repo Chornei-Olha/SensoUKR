@@ -29,7 +29,7 @@ export default function DoubleSidedTapesPage() {
       <DoubleSidedTapes />
 
       <div className="container mx-auto px-4 md:px-8">
-        <ContactForm />
+        {/* <ContactForm /> */}
         <Footer />
       </div>
     </>
